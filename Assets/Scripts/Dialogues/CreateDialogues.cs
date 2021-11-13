@@ -15,7 +15,7 @@ public class CreateDialogues : MonoBehaviour
     [SerializeField] private GameObject _button;
 
     public static List<int> sentenceAlreadySaid;
-
+    public static List<int> sentenceUnavailable;
     private ListDialogues _listDialogues;
 
     [SerializeField] private PNJManagement _pnjManagement;
@@ -28,14 +28,30 @@ public class CreateDialogues : MonoBehaviour
         _listDialogues = new ListDialogues();
 
         sentenceAlreadySaid = new List<int>();
+        sentenceUnavailable = new List<int>();
 
         var jsonFiles = Resources.Load<TextAsset>("Discussions/Jour" + NumberDay.GetDay() + "/Player/"+ PNJManagement.GetCurrentPNJ());
         
         _listDialogues = JsonUtility.FromJson<ListDialogues>(jsonFiles.ToString());
-        
-        
     }
-    
+
+    public void UpdateSentenceUnavailable()
+    {
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            sentenceUnavailable.Add(transform.GetChild(i).GetComponent<AnswerPlayer>().idAnswer);
+        }
+
+        foreach (var id in sentenceAlreadySaid)
+        {
+            Debug.Log("Sentence said : " + id);
+        }
+    }
+
+    public void UpdateSentenceSaid(int id)
+    {
+        sentenceAlreadySaid.Add(id);
+    }
 
 
     public void UpdateNumberAnswer()
@@ -46,17 +62,28 @@ public class CreateDialogues : MonoBehaviour
         RectTransform trans;
 
         List<string> answer;
+        List<int> answerId;
         int numberDialog = 0;
+
         try
         {
-            numberDialog = _listDialogues.NumberAnswerAvailable(sentenceAlreadySaid, _pnjManagement.GetListSaidPNJ());
-
-            answer = new List<string>();
-
-            answer = _listDialogues.GetAnswer(_pnjManagement.GetListSaidPNJ(), sentenceAlreadySaid);
+            numberDialog = _listDialogues.NumberAnswerAvailable(_pnjManagement.GetListSaidPNJ(), sentenceUnavailable);
         }
         catch (Exception e)
         {
+        }
+        
+        try
+        {
+            answer = new List<string>();
+            answerId = new List<int>();
+            answer = _listDialogues.GetAnswer(_pnjManagement.GetListSaidPNJ(), sentenceUnavailable);
+            
+            answerId = _listDialogues.GetIdAnswer(_pnjManagement.GetListSaidPNJ(), sentenceUnavailable);
+        }
+        catch (Exception e)
+        {
+            answerId = new List<int>();
             answer = new List<string>();
         }
 
@@ -69,6 +96,7 @@ public class CreateDialogues : MonoBehaviour
                 dialogue = Instantiate(_button);
                 dialogue.AddComponent<AnswerPlayer>();
                 dialogue.GetComponent<AnswerPlayer>().setText(answer[0]);
+                dialogue.GetComponent<AnswerPlayer>().idAnswer = answerId[0];
                 trans = dialogue.GetComponent<RectTransform>();
                 trans.SetParent(gameObject.transform);
                 trans.anchoredPosition = new Vector2(0,75);
@@ -76,6 +104,7 @@ public class CreateDialogues : MonoBehaviour
                 dialogue = Instantiate(_button);
                 dialogue.AddComponent<AnswerPlayer>();
                 dialogue.GetComponent<AnswerPlayer>().setText(answer[1]);
+                dialogue.GetComponent<AnswerPlayer>().idAnswer = answerId[1];
                 trans = dialogue.GetComponent<RectTransform>();
                 trans.SetParent(gameObject.transform);
                 trans.anchoredPosition = new Vector2(0, -75);
@@ -84,6 +113,7 @@ public class CreateDialogues : MonoBehaviour
                 dialogue = Instantiate(_button);
                 dialogue.AddComponent<AnswerPlayer>();
                 dialogue.GetComponent<AnswerPlayer>().setText(answer[0]);
+                dialogue.GetComponent<AnswerPlayer>().idAnswer = answerId[0];
                 trans = dialogue.GetComponent<RectTransform>();
                 trans.SetParent(gameObject.transform);
                 trans.anchoredPosition = new Vector2(0,0);
@@ -98,6 +128,7 @@ public class CreateDialogues : MonoBehaviour
                 dialogue = Instantiate(_button);
                 dialogue.AddComponent<AnswerPlayer>();
                 dialogue.GetComponent<AnswerPlayer>().setText(answer[0]);
+                dialogue.GetComponent<AnswerPlayer>().idAnswer = answerId[0];
                 trans = dialogue.GetComponent<RectTransform>();
                 trans.SetParent(gameObject.transform);
                 trans.anchoredPosition = new Vector2(0,75);
@@ -105,6 +136,7 @@ public class CreateDialogues : MonoBehaviour
                 dialogue = Instantiate(_button);
                 dialogue.AddComponent<AnswerPlayer>();
                 dialogue.GetComponent<AnswerPlayer>().setText(answer[1]);
+                dialogue.GetComponent<AnswerPlayer>().idAnswer = answerId[1];
                 trans = dialogue.GetComponent<RectTransform>();
                 trans.SetParent(gameObject.transform);
                 trans.anchoredPosition = new Vector2(0,0);
@@ -112,6 +144,7 @@ public class CreateDialogues : MonoBehaviour
                 dialogue = Instantiate(_button);
                 dialogue.AddComponent<AnswerPlayer>();
                 dialogue.GetComponent<AnswerPlayer>().setText(answer[2]);
+                dialogue.GetComponent<AnswerPlayer>().idAnswer = answerId[2];
                 trans = dialogue.GetComponent<RectTransform>();
                 trans.SetParent(gameObject.transform);
                 trans.anchoredPosition = new Vector2(0, -75);
@@ -135,11 +168,12 @@ public class ListDialogues
                 answerAvailable.Add(dial.idSentence);
             }
         }
-
         if (answerAvailable.Count == 0)
         {
             throw new Exception("Pas d'élément");
         }
+        
+
         return GetSentenceByID(answerAvailable[0]);
     }
     
@@ -161,12 +195,12 @@ public class ListDialogues
         return answerAvailable[0];
     }
 
-    public int NumberAnswerAvailable(List<int> sentenceSaidByPlayer, List<int> sentenceAlreadySaid)
+    public int NumberAnswerAvailable(List<int> sentenceSaidByPNJ, List<int> sentenceAlreadySaid)
     {
         List<int> answerAvailable = new List<int>();
         foreach (var dial in listDialogues)
         {
-            if (dial.canSay(sentenceSaidByPlayer) && !sentenceAlreadySaid.Contains(dial.idSentence))
+            if (dial.canSay(sentenceSaidByPNJ) && !sentenceAlreadySaid.Contains(dial.idSentence))
             {
                 answerAvailable.Add(dial.idSentence);
             }
@@ -206,11 +240,41 @@ public class ListDialogues
             throw new Exception("Pas d'élément");
         }
 
+        int nbrAnswer = Mathf.Clamp(answerAvailable.Count,1,3);
+        
         List<string> returnAnswer = new List<string>();
         
-        for(int i = 0; i < 3 ;i ++)
+        for(int i = 0; i < nbrAnswer ;i ++)
         {
             returnAnswer.Add(GetSentenceByID(answerAvailable[i]));
+        }
+        return returnAnswer;
+    }
+
+    public List<int> GetIdAnswer(List<int> sentenceSaidByPNJ, List<int> sentenceAlreadySaid)
+    {
+        List<int> answerAvailable = new List<int>();
+        foreach (var dial in listDialogues)
+        {
+            
+            if (dial.canSay(sentenceSaidByPNJ) && !sentenceAlreadySaid.Contains(dial.idSentence))
+            {
+                answerAvailable.Add(dial.idSentence);
+            }
+        }
+
+        if (answerAvailable.Count == 0)
+        {
+            throw new Exception("Pas d'élément");
+        }
+
+        int nbrAnswer = Mathf.Clamp(answerAvailable.Count,1,3);
+        
+        List<int> returnAnswer = new List<int>();
+        
+        for(int i = 0; i < nbrAnswer ;i ++)
+        {
+            returnAnswer.Add(answerAvailable[i]);
         }
         return returnAnswer;
     }

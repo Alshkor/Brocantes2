@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class AnswerPlayer : MonoBehaviour
 {
     public string answer;
-
+    public int idAnswer;
     private PNJManagement _pnjManagement;
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,11 @@ public class AnswerPlayer : MonoBehaviour
 
     public void NextSentencePNJ()
     {
+        transform.parent.gameObject.GetComponent<DestroyChildren>().destroy();
+        transform.parent.gameObject.GetComponent<CreateDialogues>().UpdateSentenceSaid(idAnswer);
+        transform.parent.gameObject.GetComponent<CreateDialogues>().UpdateSentenceUnavailable();
         _pnjManagement.ChangeSentenceCurrent();
+        Debug.Log("pk ca fait ca");
     }
     
     // Update is called once per frame

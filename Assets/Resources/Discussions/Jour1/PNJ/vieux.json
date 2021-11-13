@@ -1,57 +1,57 @@
 {
     "listDialogues": [
         {
-            "sentence": "Hum excusez-moi, il y a quelqu’un ? Oh vous êtes là !",
+            "sentence": "Hum excusez-moi, il y a quelquï¿½un ? Oh vous ï¿½tes lï¿½ !",
             "idSentence": 1
         },
         {
-            "sentence": "Vous venez d’arriver n’est-ce-pas, vous avez l’air d’être de la ville vous ?",
+            "sentence": "Vous venez dï¿½arriver nï¿½est-ce-pas, vous avez lï¿½air dï¿½ï¿½tre de la ville vous ?",
             "idSentence": 2
         },
         {
-            "sentence": "Y a pas à dire c’est rare que des citadins viennent dans un endroit perdu comme ça.",
+            "sentence": "Y a pas ï¿½ dire cï¿½est rare que des citadins viennent dans un endroit perdu comme ï¿½a.",
             "idSentence": 3
         },
         {
-            "sentence": "Oh je vois, je ne vais pas vous embêter avec ça alors c’est vos histoires après tout.",
+            "sentence": "Oh je vois, je ne vais pas vous embï¿½ter avec ï¿½a alors cï¿½est vos histoires aprï¿½s tout.",
             "idSentence": 6,
             "canSayIf": [ 4 ]
         },
         {
-            "sentence": "Ah ça ! Vous aimerez beaucoup ce village alors !",
+            "sentence": "Ah ï¿½a ! Vous aimerez beaucoup ce village alors !",
             "idSentence": 7,
             "canSayIf": [ 5 ]
         },
         {
-            "sentence": "Eh bien bienvenue! J'espère que votre commerce marchera.",
+            "sentence": "Eh bien bienvenue! J'espï¿½re que votre commerce marchera.",
             "idSentence": 8
         },
         {
-            "sentence": "C’est pas toujours facile croyez-moi je m’y connais un peu",
+            "sentence": "Cï¿½est pas toujours facile croyez-moi je mï¿½y connais un peu",
             "idSentence": 9
         },
         {
-            "sentence": "Oh je tenais moi-même un magasin il y a fort longtemps",
+            "sentence": "Oh je tenais moi-mï¿½me un magasin il y a fort longtemps",
             "idSentence": 13,
             "canSayIf": [12]
         },
         {
-            "sentence": "Il marchait plutôt bien vous savez, je l’avais repris de mon père.",
+            "sentence": "Il marchait plutï¿½t bien vous savez, je lï¿½avais repris de mon pï¿½re.",
             "idSentence": 14,
-            "canSayIf": [ 13 ]
+            "canSayIf": [ 12 ]
         },
         {
-            "sentence": "Vous vous levez tôt vous aussi ? J’arrivais chaque jour à 8h10 je m’en rappelle pour tout préparer.",
+            "sentence": "Vous vous levez tï¿½t vous aussi ? Jï¿½arrivais chaque jour ï¿½ 8h10 je mï¿½en rappelle pour tout prï¿½parer.",
             "idSentence": 15,
-            "canSayIf": [ 14 ]
+            "canSayIf": [ 12 ]
         },
         {
-            "sentence": "Enfin ça appartient au passé maintenant !",
+            "sentence": "Enfin ï¿½a appartient au passï¿½ maintenant !",
             "idSentence": 16,
-            "canSayIf": [ 15 ]
+            "canSayIf": [ 12 ]
         },
         {
-            "sentence": "Voyez-vous je m’ennuie un peu ces derniers temps, auriez-vous un livre à vendre?",
+            "sentence": "Voyez-vous je mï¿½ennuie un peu ces derniers temps, auriez-vous un livre ï¿½ vendre?",
             "idSentence": 17
         },
         {
@@ -60,7 +60,7 @@
             "canSayIf": [ 100, 101 ]
         },
         {
-            "sentence": "Oh mais c’est une dédicace, quelle chance ! Ça doit augmenter sa valeur !",
+            "sentence": "Oh mais cï¿½est une dï¿½dicace, quelle chance ! ï¿½a doit augmenter sa valeur !",
             "idSentence": 19,
             "canSayIf": [ 103 ]
         },

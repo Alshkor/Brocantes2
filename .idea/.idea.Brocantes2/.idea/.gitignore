@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/projectSettingsUpdater.xml
+/modules.xml
+/contentModel.xml
+/.idea.Brocantes2.iml
+# Datasource local storage ignored files
+/../../../../../../../../../:\Users\axelc\Documents\GitHub\Brocantes2\.idea\.idea.Brocantes2\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

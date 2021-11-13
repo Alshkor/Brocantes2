@@ -40,9 +40,9 @@ public class Carac : MonoBehaviour
 
     public void changeText()
     {
-        _playerDialogues.UpdateNumberAnswer();
+
         TextPersonnage.UpdateSentence(Speak());
-        
+        _playerDialogues.UpdateNumberAnswer();
     }
     
     
