@@ -21,4 +21,5 @@ public class InitObservableObject : MonoBehaviour
 public class StaticObject
 {
     public static GameObject activeObject;
+    public static int idComment = -1;
 }
