@@ -1,0 +1,49 @@
+﻿{
+
+  "ListObjects": [
+    {
+      "objectName": "Boîte à musique",
+      "idObject": 1,
+      "description": "Une boite à musique qui ,semblerait-il, ait appartenu à quelqu'un d'autre d'après les inscriptions dessus. !",
+      "recommandedPrice": 15,
+      "commentaries": [ "Une musique retentit", "Au son de la musique, Évangéline semble pensive." ]
+    },
+    {
+      "objectName": "Montre à gousset",
+      "idObject": 2,
+      "description": "Une montre à gousset avec des reliures en or. Elle semble fonctionnelle.",
+      "recommandedPrice": 100,
+      "commentaries": [ "La montre s'arrête sur 10h40. Sephi-Roth est tout à coup nostalgique." ]
+    },
+    {
+      "objectName": "Ours en peluche",
+      "idObject": 3,
+      "description": "Un ours en peluche marron légèrement délavé. Vous l'avez trouvé dans la rue il y a quelques jours.",
+      "recommandedPrice": 15,
+      "commentaries": [ "Une voiture dans un ours en peluche ?", "Vous découvrez une petite voiture cachée dans l'ourson. La femme s'effondre en larme." ]
+    },
+    {
+      "objectName": "Cadre photo",
+      "idObject": 4,
+      "description": "Un cadre photo bleu avec des petits motifs dessus.",
+      "recommandedPrice": 20,
+      "commentaries": [ "Des fleurs blanches", "Lorsque vous pointez les fleurs blanches, Luke sourit." ]
+    },
+    {
+      "objectName": "Petite voiture",
+      "idObject": 5,
+      "description": "Une petite voiture en fer. Les enfants adorent jouer avec en général.",
+      "recommandedPrice": 10,
+      "commentaries": ["Il manque une roue", "Pouet, Pouet!"]
+    },
+    {
+      "objectName": "Vieux miroir",
+      "idObject": 6,
+      "description": "Un miroir ancien qui a clairement besoin d'être poli. Le cadre semble en bon êtat.",
+      "recommandedPrice": 10,
+      "commentaries": ["Une jolie paquerette blanche est dessinée sur le dos du miroir"]
+    }
+
+  ]
+
+}

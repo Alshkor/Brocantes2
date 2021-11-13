@@ -1,0 +1,4 @@
+Il faut ajouter le nouveau Script AdaptativeText sur le InstantiateObject
+Il faut passer le canvas en Render Mode -> World Space
+Il faut modifier les options du Description Text pour repasser son overflow en normal
+	-> Il faut probablement faire de même pour les commentaire

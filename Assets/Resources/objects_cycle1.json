@@ -1,0 +1,28 @@
+﻿{
+
+  "ListObjects": [
+    {
+      "objectName": "Vase ancien",
+      "idObject": 1,
+      "description" :  "Un vase sans grand intêret.",
+      "recommandedPrice": 20,
+      "commentaries": [ "Vous observez une brèche sur le vase." ]
+    },
+    {
+      "objectName": "Vase moderne",
+      "idObject": 2,
+      "description": "Un vase au style moderne que vous avez trouvé dans un vieux débarras.",
+      "recommandedPrice": 30,
+      "commentaries": []
+    },
+    {
+      "objectName": "Livre - Le Noël de Moustache",
+      "idObject": 3,
+      "description": "Un livre racontant l'histoire de Moustache, un chat adorable !",
+      "recommandedPrice": 10,
+      "commentaries": [ "Un autographe", "Il y a un autographe sur la première page. Les yeux du vieil homme s'illuminent." ]
+    }
+
+  ]
+
+}
