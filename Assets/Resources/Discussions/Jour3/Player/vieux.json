@@ -1,0 +1,108 @@
+﻿{
+
+  "ListDialogues": [
+    {
+      "sentence": "Bonjour, vous allez bien ?",
+      "idSentence": 2,
+      "canSayIf": [ 1 ],
+      "available": true
+    },
+    {
+      "sentence": "Que vous faut-il?",
+      "idSentence": 4,
+      "canSayIf": [ 3 ],
+      "available": true
+    },
+    {
+      "sentence": "Parlez-moi de vous dans ce cas.",
+      "idSentence": 7,
+      "canSayIf": [ 6 ],
+      "available": true
+    },
+    {
+      "sentence": "Vous aimez beaucoup la lecture si je me souviens bien?",
+      "idSentence": 8,
+      "canSayIf": [ 6 ],
+      "available": true
+    },
+    {
+      "sentence": "Cette montre vous évoque quelque chose?",
+      "idSentence": 27,
+      "canSayIf": [ 106 ],
+      "available": false
+    },
+    {
+      "sentence": "Pas très bien visiblement puisque vous avez fait faillite.",
+      "idSentence": 12,
+      "canSayIf": [ 10 ],
+      "available": true
+    },
+    {
+      "sentence": "Vous teniez un magasin ?",
+      "idSentence": 13,
+      "canSayIf": [ 10 ],
+      "available": true
+    },
+    {
+      "sentence": "Pas toujours facile comme métier…",
+      "idSentence": 14,
+      "canSayIf": [ 11 ],
+      "available": true
+    },
+    {
+      "sentence": "Enfin, maintenant vous avez du temps, sans boutique.",
+      "idSentence": 15,
+      "canSayIf": [ 11 ],
+      "available": true
+    },
+    {
+      "sentence": "Ahah je me lève un peu plus tard.",
+      "idSentence": 20,
+      "canSayIf": [ 19 ],
+      "available": true
+    },
+    {
+      "sentence": "C’est très précis comme horaire. Pourquoi 8h10?",
+      "idSentence": 21,
+      "canSayIf": [ 19 ],
+      "available": true
+    },
+    {
+      "sentence": "C’est la montre qui vous y a fait penser?",
+      "idSentence": 31,
+      "canSayIf": [ 27 ],
+      "available": true
+    },
+    {
+      "sentence": "OK BOOMER.",
+      "idSentence": 32,
+      "canSayIf": [ 27 ],
+      "available": true
+    },
+    {
+      "sentence": "Je peux vous la vendre à moitié prix",
+      "idSentence": 35,
+      "canSayIf": [ 33 ],
+      "available": true
+    },
+    {
+      "sentence": "Elle est haut dessus de vos moyens.",
+      "idSentence": 36,
+      "canSayIf": [ 33 ],
+      "available": true
+    },
+    {
+      "sentence": "Si vous le dites…",
+      "idSentence": 39,
+      "canSayIf": [ 37 ],
+      "available": true
+    },
+    {
+      "sentence": "Elle est fissurée !",
+      "idSentence": 40,
+      "canSayIf": [ 37 ],
+      "available": true
+    }
+  ]
+
+}

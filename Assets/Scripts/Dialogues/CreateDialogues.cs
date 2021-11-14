@@ -52,6 +52,7 @@ public class CreateDialogues : MonoBehaviour
         var jsonFiles = Resources.Load<TextAsset>("Discussions/Jour" + NumberDay.GetDay() + "/Player/"+ PNJManagement.GetCurrentPNJ());
         
         Debug.Log("day : " + NumberDay.GetDay() + " current  " + PNJManagement.GetCurrentPNJ());
+        Debug.Log("Discussions/Jour" + NumberDay.GetDay() + "/Player/"+ PNJManagement.GetCurrentPNJ());
         
         _listDialogues = JsonUtility.FromJson<ListDialogues>(jsonFiles.ToString());
     }

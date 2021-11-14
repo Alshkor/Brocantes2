@@ -1,0 +1,115 @@
+﻿{
+
+  "ListDialogues": [
+    {
+      "sentence": "Bonjour jeune homme.",
+      "idSentence": 1
+    },
+    {
+      "sentence": "Très bien merci!",
+      "idSentence": 3
+    },
+    {
+      "sentence": "Je flâne, je ne sais pas encore quoi choisir.",
+      "idSentence": 5
+    },
+    {
+      "sentence": "Peut-être pouvez-vous me conseiller ?",
+      "idSentence": 6
+    },
+    {
+      "sentence": "Oh je n’ai pas grand chose à dire sur moi. Je suis un homme aux revenus modestes.",
+      "idSentence": 9,
+      "canSayif": [ 7 ]
+    },
+    {
+      "sentence": "Vous savez… je tenais également un magasin avant",
+      "idSentence": 10
+    },
+    {
+      "sentence": "Oui énormément! Je lisais en attendant que mes clients arrivent.",
+      "idSentence": 11,
+      "canSayif": [ 8 ]
+    },
+    {
+      "sentence": "Comment osez-vous ? Allez paître jeune effronté !",
+      "idSentence": 16,
+      "canSayif": [ 12, 15 ]
+    },
+    {
+      "sentence": "C’était la belle époque…",
+      "idSentence": 17,
+      "canSayif": [ 13 ]
+    },
+    {
+      "sentence": "Ah… C’est pour ça que j’en suis arrivé là…",
+      "idSentence": 18,
+      "canSayif": [ 14 ]
+    },
+    {
+      "sentence": "Je commençais tous les jours à 8h10.",
+      "idSentence": 19
+    },
+    {
+      "sentence": "Je vais arrêter de vous embêter avec mes histoires. Mon temps est passé.",
+      "idSentence": 22,
+      "canSayif": [ 20,39 ]
+    },
+    {
+      "sentence": "Proposez-moi un article dans mes moyens pour me changer les idées !",
+      "idSentence": 23,
+    },
+    {
+      "sentence": "Oui, je partais toujours 10 minutes en retard car je discutais avec mon père…",
+      "idSentence": 24,
+      "canSayif": [ 21 ]
+    },
+    {
+      "sentence": "Il venait souvent m’aider à la boutique. Toujours à la même heure le matin.”",
+      "idSentence": 25
+    },
+    {
+      "sentence": "Mais je ne me souviens plus de l’heure dont il s’agissait…",
+      "idSentence": 26
+    },
+    {
+      "sentence": "Je… Euh…",
+      "idSentence": 28,
+      "canSayif": [ 27 ]
+    },
+    {
+      "sentence": "Excusez-moi jeune homme.",
+      "idSentence": 29
+    },
+    {
+      "sentence": "C’est juste que je viens de me rappeler que mon père me rendait visite à 10h40 tous les jours à ma boutique.",
+      "idSentence": 30
+    },
+    {
+      "sentence": "Oui exactement… Elle me rappelle beaucoup mon père…",
+      "idSentence": 33,
+      "canSayif": [ 31 ]
+    },
+    {
+      "sentence": "OK ZOOMER, le boomer que je suis s’en va alors.",
+      "idSentence": 34,
+      "canSayif": [ 32 ]
+    },
+    {
+      "sentence": "Je ne peux pas accepter ! c’est bien trop généreux !",
+      "idSentence": 37,
+      "canSayif": [ 35 ]
+    },
+    {
+      "sentence": "Ah dommage… que me proposez-vous alors?",
+      "idSentence": 38,
+      "canSayif": [ 36 ]
+    },
+    {
+      "sentence": "Oh.. Bon très bien alors. Merci infiniment !",
+      "idSentence": 41,
+      "canSayif": [ 40 ]
+    }
+  ]
+
+}
