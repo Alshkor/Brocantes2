@@ -82,7 +82,6 @@ public class StockingRessources : MonoBehaviour
         //Debug.Log(_reputation.Equals(_minRep));
         if (_reputation <= _minRep)
         {
-            Debug.Log("on est mort");
             SceneManagement.Instance.SceneToLooseRep();
         } 
     }

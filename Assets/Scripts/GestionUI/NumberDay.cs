@@ -33,7 +33,7 @@ public class NumberDay : MonoBehaviour
 
     public void PassDay()
     {
-        
+        bool changeDay;
         /*Dernier Jour*/
         if (_day + 1 == 5) {
             /*On lance l'écran de fin*/
@@ -43,11 +43,19 @@ public class NumberDay : MonoBehaviour
         /*Autres Jours*/
         } else {
             iteration++;
+
+            if (iteration < 5)
+            {
+                changeDay = false;
+            }
+            else
+            {
+                changeDay = true;
+            }
             
             /*On lance l'écran de changement de jour*/
-            changePersonnage();
+            changePersonnage(changeDay);
 
-            Debug.Log("jour = " + _day + " et iteration = " + iteration);
             if (iteration < 5)
             {
                 _day = 1;
@@ -60,7 +68,7 @@ public class NumberDay : MonoBehaviour
         }
     }
     
-    public void changePersonnage()
+    public void changePersonnage(bool change_day)
     {
         //IsItemSelect.GetItemSelect().SetActive(false);
         switch (iteration)
@@ -94,25 +102,25 @@ public class NumberDay : MonoBehaviour
         }
 
         //IsItemSelect.GetItemSelect().SetActive(true);
-        
-        StartCoroutine("PrintFirstSentence");
+        if (!change_day)
+        {
+            StartCoroutine("PrintFirstSentence");
+        }
     }
 
     IEnumerator PrintFirstSentence()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.2f);
         PNJManagement.Instance.ChangeSentenceCurrent();
 
 
-        //Debug.Break();
     }
     
     IEnumerator changeSentenceNext()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
         SceneManagement.Instance.DiscussionToChangeDay();
 
-        //Debug.Break();
     }
     
 }
