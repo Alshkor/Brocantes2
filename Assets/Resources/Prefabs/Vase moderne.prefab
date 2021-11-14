@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 2381737033205433272}
   - component: {fileID: 2381737033205433273}
   m_Layer: 0
-  m_Name: vasePasCasse
+  m_Name: Vase moderne
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

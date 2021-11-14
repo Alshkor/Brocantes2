@@ -295,6 +295,8 @@ MonoBehaviour:
   sceneParentInventory: {fileID: 1404701821}
   sceneParentExamine: {fileID: 1932077245}
   sceneParentDiscussion: {fileID: 1478508469}
+  _initObservableObject: {fileID: 6419652793178188224}
+  _adaptativeText: {fileID: 6419652793178188228}
 --- !u!4 &60942575
 Transform:
   m_ObjectHideFlags: 0
@@ -4665,6 +4667,7 @@ GameObject:
   - component: {fileID: 1812658848}
   - component: {fileID: 1812658847}
   - component: {fileID: 1812658846}
+  - component: {fileID: 1812658849}
   m_Layer: 5
   m_Name: Vendre
   m_TagString: Untagged
@@ -4735,7 +4738,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1812658847}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1812658849}
+        m_TargetAssemblyTypeName: SellItem, Assembly-CSharp
+        m_MethodName: SellItemSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1812658847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4774,6 +4789,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812658844}
   m_CullTransparentMesh: 1
+--- !u!114 &1812658849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812658844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b19361fdb9c954c4cbe16e23f1dcb501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1813086127
 GameObject:
   m_ObjectHideFlags: 0
@@ -13170,6 +13197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6419652793178188225}
   - component: {fileID: 6419652793178188224}
+  - component: {fileID: 6419652793178188228}
   m_Layer: 0
   m_Name: InstantiateObject
   m_TagString: Untagged
@@ -13177,6 +13205,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6419652793178188228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6419652793178188227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 868ed4298c8724b418be005db7bb0747, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _descriptionObject: {fileID: 0}
+  _prixObject: {fileID: 0}
+  _commentaireObject: {fileID: 0}
+  _nameObject: {fileID: 0}
 --- !u!222 &6419652793321086604
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13310,7 +13354,7 @@ Canvas:
   m_GameObject: {fileID: 6419652793372091240}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 6419652791826580538}
   m_PlaneDistance: 100
   m_PixelPerfect: 0

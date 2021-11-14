@@ -10,13 +10,28 @@ public class InitObservableObject : MonoBehaviour
 
     /*On instantie le gameObject contenu dans la variable static associée*/
     void Awake(){
+    }
+
+    public void SetNewObject()
+    {
         initGameObject = StaticObject.activeObject;
         Debug.Log(initGameObject);
         GameObject go = Instantiate(initGameObject, objectPosition, _camera.transform.rotation);
         go.transform.parent = transform;
         go.GetComponent<ClickableObject>()._camera = _camera;
     }
+
+    public void CloseObject()
+    {
+        Destroy(transform.GetChild(0).gameObject);
+
+        initGameObject = null;
+    }
+    
 }
+
+
+
 
 public class StaticObject
 {

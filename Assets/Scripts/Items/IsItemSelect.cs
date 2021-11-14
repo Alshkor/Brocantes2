@@ -47,6 +47,16 @@ public class IsItemSelect : MonoBehaviour
 
         return -1;
     }
+    
+    public static float GetRecommandedPriceItemSelected()
+    {
+        if (select)
+        {
+            return itemSelect.GetComponent<ItemScript>().GetPriceItem();
+        }
+
+        return -1;
+    }
 
     public static GameObject GetItemSelect()
     {

@@ -7,11 +7,17 @@ using UnityEngine;
 public class ItemScript : MonoBehaviour
 {
     private string _name;
+    
     private bool _sold = false;
+    
     private GameObject _prefab3D;
-    private float _price = 100;
+    
+    public float _price = 100;
+    
     private float _priceSold;
 
+    public int id;
+    
     public Sprite _selection;
     private GameObject selection;
     

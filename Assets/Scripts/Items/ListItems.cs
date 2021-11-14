@@ -21,43 +21,37 @@ public class ListItems : MonoBehaviour
         
         ListItemsJSon _listItems = new ListItemsJSon();
 
-        var jsonFiles = Resources.Load<TextAsset>("Items");
+        var jsonFiles = Resources.Load<TextAsset>("objects_cycle" + Mathf.Clamp(NumberDay.GetDay(),1,2));
         
         _listItems = JsonUtility.FromJson<ListItemsJSon>(jsonFiles.ToString());
-        Debug.Log("On passe bien ici");
-        int j = 0;
-        foreach (var truc in _listItems.itemsList)
-        {
 
-            Debug.Log("un truc " + truc.name);
+        
+        int j = 0;
+        foreach (var truc in _listItems.ListObjects)
+        {
             GameObject item = _items[j];
-            item.name = truc.name;
+            item.name = truc.objectName;
             item.AddComponent<SpriteRenderer>();
             item.AddComponent<ItemScript>();
             item.GetComponent<ItemScript>()._selection = bg;
+            item.GetComponent<ItemScript>()._price = truc.recommandedPrice;
+            item.GetComponent<ItemScript>().id = truc.idObject;
             j++;
         }
-        
-        
     }
-    
 }
 
 public class ListItemsJSon
 {
-    public List<Items> itemsList;
+    public List<Items> ListObjects;
 }
 
 [Serializable]
 public class Items
 {
-    //Sprite de l'objet
-    public Sprite _sprite;
-    
-    //Prefab de l'objet pour la visualisation 3D
-    public GameObject _prefab;
+    public float recommandedPrice;
 
-    public float _prix;
+    public string objectName;
 
-    public string name;
+    public int idObject;
 }

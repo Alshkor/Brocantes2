@@ -499,7 +499,7 @@ GameObject:
   - component: {fileID: 3559344527186105503}
   - component: {fileID: 3559344527186105502}
   m_Layer: 0
-  m_Name: Livre
+  m_Name: "Livre - Le No\xEBl de Moustache"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -798,7 +798,7 @@ GameObject:
   - component: {fileID: 7325211618380756795}
   - component: {fileID: 40662335566229127}
   m_Layer: 0
-  m_Name: musicBox
+  m_Name: "Bo\xEEte \xE0 musique"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

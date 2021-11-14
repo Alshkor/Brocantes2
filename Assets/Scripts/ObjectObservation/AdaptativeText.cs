@@ -20,6 +20,12 @@ public class AdaptativeText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SetDescription();
+        _commentaireObject.GetComponent<UnityEngine.UI.Text>().text = "Vous ne voyez rien de particulier";
+    }
+
+    public void SetDescription()
+    {
         /*On va chercher les GameObject Text qui vont s'adapter*/
         _descriptionObject = GameObject.Find("DescriptionText");
         _commentaireObject = GameObject.Find("CommentaireText");
@@ -38,7 +44,7 @@ public class AdaptativeText : MonoBehaviour
             Debug.Log("on passe par le jour 2");
         }*/
 
-        var jsonFiles = Resources.Load<TextAsset>("objects_cycle" + NumberDay.GetDay());
+        var jsonFiles = Resources.Load<TextAsset>("objects_cycle" + Mathf.Clamp(NumberDay.GetDay(),1,2));
         Debug.Log("jsonFiles : " + jsonFiles);
         
         _listObjects = JsonUtility.FromJson<ListTextObject>(jsonFiles.ToString());
@@ -50,9 +56,9 @@ public class AdaptativeText : MonoBehaviour
         _descriptionObject.GetComponent<UnityEngine.UI.Text>().text = _listObjects.GetDescriptionByID(idObjectActuel);
         _nameObject.GetComponent<UnityEngine.UI.Text>().text = _listObjects.GetNameByID(idObjectActuel);
         _prixObject.GetComponent<UnityEngine.UI.Text>().text = _listObjects.GetPriceByID(idObjectActuel).ToString();
-
-        _commentaireObject.GetComponent<UnityEngine.UI.Text>().text = "Vous ne voyez rien de particulier";
     }
+    
+    
 
     // Update is called once per frame
     void Update()
@@ -136,31 +142,31 @@ public class AdaptativeText : MonoBehaviour
 
     public int objectNameToId(string name) {
         switch (name){
-            case "Livre":
+            case "Livre - Le Noël de Moustache":
                 return 3;
                 //break;
-            case "musicBox":
+            case "Boîte à musique":
                 return 1;
                 //break;
-            case "vaseCasse":
+            case "Vase ancien":
                 return 1;
                 //break;
-            case "vasePasCasse":
+            case "Vase moderne":
                 return 2;
                 //break;
-            case "montre":
+            case "Montre à gousset":
                 return 2;
                 //break;
-            case "ours":
+            case "Ours en peluche":
                 return 3;
                 //break;
-            case "photo":
+            case "Cadre photo":
                 return 4;
                 //break;
-            case "voiture":
+            case "Petite voiture":
                 return 5;
                 //break;
-            case "miroir":
+            case "Vieux miroir":
                 return 6;
                 //break;
             default:
