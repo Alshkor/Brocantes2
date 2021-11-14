@@ -1,46 +1,40 @@
-{
+ï»¿{
     "listDialogues": [
         {
-            "sentence": "Bonjour ! Vous êtes encore ouvert ?",
+            "sentence": "Bonjour ! Vous Ãªtes encore ouvert ?",
             "idSentence": 1
         },
         {
-            "sentence": "J’aurais besoin d’un vase s’il vous plaît ! Pas trop cher si possible.",
+            "sentence": "Jâ€™aurais besoin dâ€™un vase sâ€™il vous plaÃ®t ! Pas trop cher si possible.",
             "idSentence": 3
         },
         {
-            "sentence": "Oh non, c’est juste que mon mari n’apprécierait pas.",
+            "sentence": "Oh non, câ€™est juste que mon mari nâ€™apprÃ©cierait pas.",
             "idSentence": 6,
             "canSayIf": [ 4 ]
         },
         {
-            "sentence": "",
-            "idSentence": 7,
-            "canSayIf": [ 4 ]
-        },
-        {
-            "sentence": "Oh j’ai de la chance alors !",
+            "sentence": "Oh jâ€™ai de la chance alors !",
             "idSentence": 8,
-            "canSayIf": [ 5, 7 ],
-            "blockPlayer": true
+            "canSayIf": [ 5, 7 ]
         },
         {
-            "sentence": "Oui c’est parfait ! Je vais y aller merci",
+            "sentence": "Oui câ€™est parfait ! Je vais y aller merci",
             "idSentence": 9,
             "canSayif": [ 100 ]
         },
         {
-            "sentence": "Oh c’est gentil… À vrai dire, ça ne va pas trop en ce moment…",
+            "sentence": "Oh câ€™est gentilâ€¦ Ã€ vrai dire, Ã§a ne va pas trop en ce momentâ€¦",
             "idSentence": 12,
             "canSayIf": [ 11 ]
         },
         {
-            "sentence": "Mais je ne veux pas vous embêter avec ça !",
+            "sentence": "Mais je ne veux pas vous embÃªter avec Ã§a !",
             "idSentence": 13,
-            "canSayIf": [ 11 ]
+            "canSayIf": [ 12 ]
         },
         {
-            "sentence": "Je reviendrai sûrement dans les prochains jours, au revoir !",
+            "sentence": "Je reviendrai sÃ»rement dans les prochains jours, au revoir !",
             "idSentence": 14,
             "canSayIf": [13]
         }
