@@ -55,7 +55,7 @@ public class NumberDay : MonoBehaviour
             else
             {
                 _day = iteration - 3;
-                SceneManagement.Instance.ChangeDayToDiscussion();
+                StartCoroutine("changeSentenceNext");
             }
         }
     }
@@ -102,7 +102,16 @@ public class NumberDay : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         PNJManagement.Instance.ChangeSentenceCurrent();
-        Debug.Break();
+
+        //Debug.Break();
+    }
+    
+    IEnumerator changeSentenceNext()
+    {
+        yield return new WaitForSeconds(0.2f);
+        SceneManagement.Instance.DiscussionToChangeDay();
+
+        //Debug.Break();
     }
     
 }
