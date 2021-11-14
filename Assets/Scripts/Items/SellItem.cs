@@ -25,6 +25,7 @@ public class SellItem : MonoBehaviour
     public void SellItemSelect()
     {
         float priceItem = IsItemSelect.GetPriceItemSelected();
+        float reput_modif = 0;
         string itemSelect = IsItemSelect.GetNameItemSelect();
         if (priceItem.Equals(-1))
         {
@@ -35,6 +36,7 @@ public class SellItem : MonoBehaviour
         {
             CreateDialogues.sentenceAlreadySaid.Add(1000); //On ajoute l'id correspondant à "c est trop cher"
             SceneManagement.Instance.InventoryToDiscussion();
+            reput_modif = priceItem - IsItemSelect.GetRecommandedPriceItemSelected();
             return;
         }
         
@@ -42,12 +44,14 @@ public class SellItem : MonoBehaviour
         {
             CreateDialogues.sentenceAlreadySaid.Add(1001); //On ajoute l'id correspondant à "c est pas assez cher"
             SceneManagement.Instance.InventoryToDiscussion();
+            reput_modif = priceItem - IsItemSelect.GetRecommandedPriceItemSelected();
             return;
         }
 
         int idItem = -1;
         if (NumberDay.GetDay() == 1)
         {
+            reput_modif = priceItem - IsItemSelect.GetRecommandedPriceItemSelected();
             switch (itemSelect)
             {
                 case "Vase ancien":
@@ -71,7 +75,7 @@ public class SellItem : MonoBehaviour
         if (PNJManagement.Instance.CurrentAccept(idItem))
         {
             StockingRessources.UpdateGold(priceItem);
-            StockingRessources.UpdateReputation(priceItem);
+            StockingRessources.UpdateReputation(-reput_modif);
 
             IsItemSelect.destroyItem();
         }
