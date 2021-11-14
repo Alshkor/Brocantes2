@@ -1,6 +1,6 @@
 ﻿{
 
-  "ListDialogues": [
+  "listDialogues": [
     {
       "sentence": "Bonjour jeune homme.",
       "idSentence": 1
@@ -57,7 +57,7 @@
     },
     {
       "sentence": "Proposez-moi un article dans mes moyens pour me changer les idées !",
-      "idSentence": 23,
+      "idSentence": 23
     },
     {
       "sentence": "Oui, je partais toujours 10 minutes en retard car je discutais avec mon père…",
