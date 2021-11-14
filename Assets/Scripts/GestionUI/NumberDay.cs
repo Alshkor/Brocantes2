@@ -79,7 +79,7 @@ public class NumberDay : MonoBehaviour
                 break;
             case 5:
                 //change item
-                
+                ListItems.Instance.GetItemNextIt();
                 PNJManagement.ChangePNJ("primrose");
                 break;
             case 6:
