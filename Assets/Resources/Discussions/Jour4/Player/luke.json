@@ -1,0 +1,106 @@
+﻿{
+    "listDialogues": [
+        {
+            "sentence": "Bonjour ! Puis-je vous aider ?",
+            "idSentence": 2,
+            "canSayIf": [ 1 ],
+            "available": true
+        },
+        {
+            "sentence": "Des envies en particulier ?",
+            "idSentence": 4,
+            "canSayIf": [ 3 ],
+            "available": true
+        },
+        {
+            "sentence": "Prenez juste le premier objet qui vient.",
+            "idSentence": 5,
+            "canSayIf": [ 3 ],
+            "available": true
+        },
+        { 
+            "sentence": "Vous semblez pensive.. tout va bien ?",
+            "idSentence": 6,
+            "canSayIf": [ 107 ],
+            "available": false
+        },
+        {
+            "sentence": "Comment a-t-elle pu se retrouver ici ?",
+            "idSentence": 9,
+            "canSayIf": [ 8 ],
+            "available": true
+        },
+        { 
+            "sentence": "Elle vaut encore plus chère alors !",
+            "idSentence": 10,
+            "canSayIf": [ 8 ],
+            "available": true
+        },
+        { 
+            "sentence": "Elle voulait sûrement vous fuir.",
+            "idSentence": 12,
+            "canSayIf": [ 11 ],
+            "available": true
+        },
+        {
+            "sentence": "Pourquoi est-elle partie ?",
+            "idSentence": 13,
+            "canSayIf": [ 11 ],
+            "available": true
+        },
+        {
+            "sentence": "Peut-être pourriez-vous reprendre contact ?",
+            "idSentence": 16,
+            "canSayIf": [ 15 ],
+            "available": true
+        },
+        {
+            "sentence": "Des problèmes de riches j’imagine…",
+            "idSentence": 20,
+            "canSayIf": [ 18 ],
+            "available": true
+        },
+        {
+            "sentence": "Pour être si récalcitrant face aux bonnes affaires ?",
+            "idSentence": 21,
+            "canSayIf": [ 18 ],
+            "available": true
+        },
+        {
+            "sentence": "Quelques indications seraient quand même les bienvenues.",
+            "idSentence": 22,
+            "canSayIf": [ 19 ],
+            "available": true
+        },
+        {
+            "sentence": "Reine des pouffes peut-être.",
+            "idSentence": 23,
+            "canSayIf": [ 19 ],
+            "available": true
+        },
+        {
+            "sentence": "Qu’y a-t-il à comprendre ?",
+            "idSentence": 28,
+            "canSayIf": [ 24 ],
+            "available": true
+        },
+        {
+            "sentence": "Je comprends que ce n’est pas ici que vous trouverez votre bonheur.",
+            "idSentence": 29,
+            "canSayIf": [ 24 ],
+            "available": true
+        },
+        {
+            "sentence": "Tout n’a pas besoin d’être cher, vous savez.",
+            "idSentence": 30,
+            "canSayIf": [ 25, 26 ],
+            "available": true
+        },
+        {
+            "sentence": "Pourquoi ne pas prendre un bijou ?",
+            "idSentence": 31,
+            "canSayIf": [ 27 ],
+            "available": true
+        }
+    ]
+}

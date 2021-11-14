@@ -1,13 +1,13 @@
-{
+﻿{
     "listDialogues": [
         {
-            "sentence": "Je vois �a ahah, bienvenue  ! En quoi puis-je vous aider ?",
+            "sentence": "Je vois ça ahah, bienvenue  ! En quoi puis-je vous aider ?",
             "idSentence": 2,
             "canSayIf": [ 1 ],
             "available": true
         },
         {
-            "sentence": "Je l�ai crois� hier, il est venu peu de temps apr�s vous.",
+            "sentence": "Je l’ai croisé hier, il est venu peu de temps après vous.",
             "idSentence": 5,
             "canSayIf": [ 4 ],
             "available": true
@@ -19,7 +19,7 @@
             "available": true
         },
         {
-            "sentence": "Vous devriez savoir, tout de m�me, vous �tes mari�s.",
+            "sentence": "Vous devriez savoir, tout de même, vous êtes mariés.",
             "idSentence": 9,
             "canSayIf": [ 7 ],
             "available": true
@@ -37,7 +37,7 @@
             "available": true
         },
         {
-            "sentence": "Calmez-vous ce n�est qu�un jouet.",
+            "sentence": "Calmez-vous ce n’est qu’un jouet.",
             "idSentence": 14,
             "canSayIf": [ 12 ],
             "available": true
@@ -48,26 +48,26 @@
             "canSayIf": [ 15 ],
             "available": true
         },
-        {
+        { 
             "sentence": "Faites en un autre au pire",
             "idSentence": 22,
             "canSayIf": [ 21 ],
             "available": true
         },
         {
-            "sentence": "Je suis d�sol� Je ne peux m�me pas imaginer votre douleur.",
+            "sentence": "Je suis désolé… Je ne peux même pas imaginer votre douleur.",
             "idSentence": 23,
             "canSayIf": [ 21 ],
             "available": true
         },
         {
-            "sentence": "Ce n�est pas grave, prenez votre temps, voulez-vous vous asseoir ?",
+            "sentence": "Ce n’est pas grave, prenez votre temps, voulez-vous vous asseoir ?",
             "idSentence": 27,
             "canSayIf": [ 26 ],
             "available": true
         },
         {
-            "sentence": "Vous devriez insister avec votre mari�",
+            "sentence": "Vous devriez insister avec votre mari…",
             "idSentence": 30,
             "canSayIf": [ 29 ],
             "available": true
@@ -79,13 +79,13 @@
             "available": true
         },
         {
-            "sentence": "Y a-t-il une raison � cette passion soudaine ?",
+            "sentence": "Y a-t-il une raison à cette passion soudaine ?",
             "idSentence": 35,
             "canSayIf": [ 32 ],
             "available": true
         },
         {
-            "sentence": "Oh excusez-moi, je ne savais pas. S�est-il pass� quelque chose ?",
+            "sentence": "Oh excusez-moi, je ne savais pas. S’est-il passé quelque chose ?",
             "idSentence": 36,
             "canSayIf": [ 33 ],
             "available": true
@@ -97,19 +97,19 @@
             "available": true
         },
         {
-            "sentence": "Dites m�en plus, �a ne peut pas �tre que �a.",
+            "sentence": "Dites m’en plus, ça ne peut pas être que ça.",
             "idSentence": 42,
             "canSayIf": [ 40 ],
             "available": true
         },
         {
-            "sentence": "Mais comment �tiez-vous avant cet incident ?",
+            "sentence": "Mais comment étiez-vous avant cet incident ?",
             "idSentence": 43,
             "canSayIf": [ 40 ],
             "available": true
         },
         {
-            "sentence": "Pardon, c��tait indiscret,mais vous deviez bien �tre attach�s l�un � l�autre auparavant, non ?",
+            "sentence": "Pardon, c’était indiscret,mais vous deviez bien être attachés l’un à l’autre auparavant, non ?",
             "idSentence": 49,
             "canSayIf": [ 44 ],
             "available": true

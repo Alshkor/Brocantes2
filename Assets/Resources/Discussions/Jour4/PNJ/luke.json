@@ -1,0 +1,117 @@
+﻿{
+    "listDialogues": [
+        {
+            "sentence": "Ah parfait vous êtes là !",
+            "idSentence": 1
+        },
+        {
+            "sentence": "Je l’espère oui. Je suis las de ce que je possède dernièrement donc j’aimerai un peu de nouveauté.",
+            "idSentence": 3,
+            "canSayIf": [ 2 ]
+        },
+        { 
+            "sentence": "Oh hum oui c’est juste que j’ai l’impression de connaître cette musique.",
+            "idSentence": 7,
+            "canSayIf": [ 6 ]
+        },
+        {
+            "sentence": "Mais... ce nom.. c’est celui de ma mère ! Ce doit être la boîte à musique qui me servait de berceuse.",
+            "idSentence": 8,
+            "canSayIf": [ 6 ]
+        },
+        {
+            "sentence": "Je l’avais jeté après qu’elle ait quitté la maison. Je lui en voulais tellement.",
+            "idSentence": 11,
+            "canSayIf": [ 9, 10 ]
+        },
+        {
+            "sentence": "... Adieu.",
+            "idSentence": 14,
+            "canSayIf": [ 12 ]
+        },
+        {
+            "sentence": "C’est assez compliqué… Je n’ai pas eu de nouvelles depuis.",
+            "idSentence": 15,
+            "canSayIf": [ 13 ]
+        },
+        {
+            "sentence": "Oui sans doute… Je vais prendre cette boîte en attendant. Merci à vous!",
+            "idSentence": 17,
+            "canSayIf": [ 16 ]
+        },
+        {
+            "sentence": "Non pas spécialement, enfin pas de camelote il va de soi.",
+            "idSentence": 18,
+            "canSayIf": [ 4 ]
+        },
+        {
+            "sentence": "En tant que vendeur vous devez savoir m’aider. Le client est roi et surtout moi.",
+            "idSentence": 19,
+            "canSayIf": [ 5 ]
+        },
+        {
+            "sentence": "Je ne m’attends pas à ce que vous les compreniez.",
+            "idSentence": 24,
+            "canSayIf": [ 20 ]
+        },
+        {
+            "sentence": "C’est une question de standing. Le contraire serait mal vu.",
+            "idSentence": 25,
+            "canSayIf": [ 21 ]
+        },
+        {
+            "sentence": "Disons, quelque chose de beau et cher ",
+            "idSentence": 26,
+            "canSayIf": [ 22 ]
+        },
+        {
+            "sentence": "Comment osez-vous ?! C’est honteux, je ne reviendrai plus jamais!",
+            "idSentence": 27,
+            "canSayIf": [ 23 ]
+        },
+        {
+            "sentence": "Eh bien.. il faut faire bonne figure, et savoir faire des sacrifices.",
+            "idSentence": 32,
+            "canSayIf": [ 28 ]
+        },
+        {
+            "sentence": "J’étais danseuse avant mais j’ai dû arrêter pour me concentrer sur plus sérieux.",
+            "idSentence": 33,
+            "canSayIf": [ 28 ]
+        },
+        {
+            "sentence": "Bon trêves de bavardages que me suggérez-vous ?",
+            "idSentence": 34,
+            "canSayIf": [ 28 ],
+            "blockPlayer": true
+        },
+        {
+            "sentence": "C’est regrettable et décevant. Adieu alors.",
+            "idSentence": 35,
+            "canSayIf": [ 29 ]
+        },
+        {
+            "sentence": "Ma mère disait cela avant. Bien sûr je ne la croyais pas.",
+            "idSentence": 36,
+            "canSayIf": [ 30 ]
+        },
+        {
+            "sentence": "C’était une auteure connue, Marie Garnier de Bivouac. Vous ne connaissez sûrement pas.",
+            "idSentence": 37,
+            "canSayIf": [ 30 ]
+        },
+        {
+            "sentence": "Enfin c’est du passé, que me suggérez-vous alors ?",
+            "idSentence": 38,
+            "canSayIf": [ 30 ],
+            "blockPlayer": true
+        },
+        {
+            "sentence": "Je voulais quelque chose d’original pour changer. Alors quelle est votre proposition ?",
+            "idSentence": 39,
+            "canSayIf": [ 31 ],
+            "blockPlayer": true
+        }
+    ]
+
+}
