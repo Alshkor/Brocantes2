@@ -9,6 +9,13 @@ public class ListItems : MonoBehaviour
 {
     private List<GameObject> _items;
     [SerializeField] private Sprite bg;
+    public static ListItems Instance;
+
+    void Awake()
+    {
+        Instance = this;
+    }
+    
     
     // Start is called before the first frame update
     void Start()
@@ -40,7 +47,41 @@ public class ListItems : MonoBehaviour
             j++;
         }
     }
+
+
+    public void GetItemNextIt()
+    {
+        _items = new List<GameObject>();
+        for (int i = 0; i < transform.childCount - 1; i++)
+        {
+            _items.Add(transform.GetChild(i).gameObject);
+        }
+        
+        
+        ListItemsJSon _listItems = new ListItemsJSon();
+
+        var jsonFiles = Resources.Load<TextAsset>("objects_cycle2");
+        
+        _listItems = JsonUtility.FromJson<ListItemsJSon>(jsonFiles.ToString());
+
+        
+        int j = 0;
+        foreach (var truc in _listItems.ListObjects)
+        {
+            GameObject item = _items[j];
+            item.name = truc.objectName;
+            item.AddComponent<Image>();
+            item.AddComponent<ItemScript>();
+            item.GetComponent<ItemScript>()._selection = bg;
+            item.GetComponent<ItemScript>()._price = truc.recommandedPrice;
+            item.GetComponent<ItemScript>().id = truc.idObject;
+            j++;
+        }
+    } 
 }
+
+
+
 
 public class ListItemsJSon
 {
