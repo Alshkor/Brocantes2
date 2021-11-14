@@ -1,41 +1,42 @@
 {
-    "ListDialogues": [
+    "listDialogues": [
         {
-            "sentence": "Bonjour. Oui bien sûr, vous désirez quelque chose en particulier ?",
+            "sentence": "Bonjour. Oui bien sï¿½r, vous dï¿½sirez quelque chose en particulier ?",
             "idSentence": 2,
             "canSayIf": [ 1 ],
             "available": true
         },
         {
-            "sentence": "Vous avez des problèmes d’argent ?",
+            "sentence": "Vous avez des problï¿½mes dï¿½argent ?",
             "idSentence": 4,
             "canSayIf": [ 3 ],
             "available": true
         },
         {
-            "sentence": "Oui il m’en reste un !",
-            "idSentence": 5,
-            "canSayIf": [ 3 ],
-            "available": true
-        },
-        {
-            "sentence": "Oh je vois. Il m’en reste un en tout cas !",
+            "sentence": "Oh je vois. Il mï¿½en reste un en tout cas !",
             "idSentence": 7,
             "canSayIf": [ 6 ],
             "available": true
         },
         {
-            "sentence": "Passez une bonne journée !",
-            "idSentence": 10,
-            "canSayIf": [ 9 ],
-            "available": true
-        },
-        {
-            "sentence": "J’espère que votre mari aimera ce vase !",
+            "sentence": "Jï¿½espï¿½re que votre mari aimera ce vase !",
             "idSentence": 11,
             "canSayIf": [ 7 ],
             "available": false
+        },
+        {
+            "sentence": "Oui il mï¿½en reste un !",
+            "idSentence": 5,
+            "canSayIf": [ 3 ],
+            "available": true
+        },
+        {
+            "sentence": "Passez une bonne journï¿½e !",
+            "idSentence": 10,
+            "canSayIf": [ 9 ],
+            "available": true
         }
+
     ]
 
 }

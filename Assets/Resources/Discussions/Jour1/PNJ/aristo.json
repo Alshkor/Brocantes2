@@ -1,5 +1,5 @@
 {
-    "ListDialogues": [
+    "listDialogues": [
         {
             "sentence": "Ah parfait vous êtes ouvert ce n'est pas trop tôt!",
             "idSentence" : 1
@@ -47,7 +47,7 @@
         {
             "sentence": "Ce n’est pas si horrible ici on dirait. Je reviendrai peut-être. Au revoir.",
             "idSentence": 13,
-            "canSayif": [ 12 ]
+            "canSayif": [ 101 ]
         }
     ]
 }
