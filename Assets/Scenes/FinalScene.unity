@@ -10547,8 +10547,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1868684988}
   - component: {fileID: 1868684987}
+  - component: {fileID: 1868684989}
   m_Layer: 0
-  m_Name: ManageMusic
+  m_Name: ManageStart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10664,6 +10665,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1868684989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868684986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deed88bab92d60648beba9c415c62251, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 2800000, guid: 5eeae4cac492ddd4bb5563e46eacae49, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &1903042763
 GameObject:
   m_ObjectHideFlags: 0
