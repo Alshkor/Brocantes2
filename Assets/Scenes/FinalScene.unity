@@ -5484,8 +5484,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Vous vous offrez s\xFBrement des vacances aux Cara\xEFbes, loin de tous
-    ses clients qui ne sont bon qu'a acheter vos produits."
+  m_Text: "Vous \xEAtes un f\xE9roce requin du commerce. Vous \xE9tiez employ\xE9
+    de banque ? Quoiqu\u2019il en soit, votre famille vous en remercie chaleureusement,
+    les probl\xE8mes d\u2019argent ne sont plus pour vous. Par contre, vous devriez
+    \xE9viter le bar local, au risque d\u2019\xEAtre pass\xE9 \xE0 tabac. Mais est-ce
+    que vous comptez rester parmi ces moutons que vous avez enfl\xE9s ?\r\n\r\n   
+    Vous accompagnerez votre p\xE8re demain dans une clinique Suisse qui le soignera
+    bien.\r"
 --- !u!222 &960501321
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6454,8 +6459,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Votre commerce tourne assez bien et vos clients semble plut\xF4t ravie
-    de venir."
+  m_Text: "Vous disparaissez dans l\u2019amas anonyme de ces commer\xE7ants qui ne
+    sont ni terribles, ni fantastiques. Les gens ne r\xE9servent pas leur week-end
+    pour venir vous voir de Tombouctou, mais ils ne d\xE9nigrent pas rentrer dans
+    votre boutique si ils passent devant. Votre famille vivra non dans la luxure,
+    mais dans une vie m\xE9diocre et anonyme.\r\n\r\n    Votre p\xE8re pourra peut-\xEAtre
+    survivre avec de la volont\xE9. Ce serait plus simple si vous aviez plus de ressources,
+    ceci dit.\r"
 --- !u!222 &1152858936
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8946,8 +8956,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Vous avez g\xE9r\xE9 votre stand d'une main de ma\xEEtre, les clients
-    sont ravies et votre portefeuille aussi bravo !"
+  m_Text: "Vous \xEAtes un bon sacr\xE9 commer\xE7ant ! Votre r\xE9putation est \xE9tabli,
+    et les gens reviendront r\xE9guli\xE8rement chez vous. Vous arrivez \xE0 sustenter
+    votre famille par la m\xEAme occasion, tout le monde est heureux !\r\n\r\n   
+    Votre p\xE8re va \xEAtre admis \xE0 la clinique locale gr\xE2ce \xE0 votre dur
+    labeur, et devrait s\u2019en tirer. F\xE9licitations !\r"
 --- !u!222 &1587579445
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9373,8 +9386,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "M\xEAme si vous n'\xEAtes pas beaucoup plus riche qu'avant d'ouvrir le
-    stand, vous avez su r\xE9chauffer le coeur de vos clients !"
+  m_Text: "Vous \xEAtes un brocanteur admirable, tout le monde parle de vous comme
+    une personne avec le c\u0153ur sur la main. Vous avez acquis la sympathie de
+    vos concitoyens, et ce pour longtemps.\r\n\r\nH\xE9las, le c\u0153ur sur la main
+    ne remplace pas les billets verts : votre p\xE8re est d\xE9c\xE9d\xE9 hier.\r"
 --- !u!222 &1692024800
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10502,8 +10517,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Malheureusement, vos clients tout comme votre portefeuille ne semble pas
-    ravie de vos pr\xE9stations."
+  m_Text: "Vous n\u2019\xEAtes ni un grippe-sou, ni un bon samaritain. Vous n\u2019\xEAtes
+    m\xEAme pas un commer\xE7ant \xE0 ce niveau l\xE0. Votre famille questionne votre
+    m\xE9tier, le ventre vide. \r\n\r\n    Votre p\xE8re, lui, ne questionnera plus
+    jamais rien.\r"
 --- !u!222 &1849317913
 CanvasRenderer:
   m_ObjectHideFlags: 0
