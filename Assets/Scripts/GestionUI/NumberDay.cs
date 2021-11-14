@@ -55,6 +55,7 @@ public class NumberDay : MonoBehaviour
             else
             {
                 _day = iteration - 3;
+                SceneManagement.Instance.ChangeDayToDiscussion();
             }
         }
     }

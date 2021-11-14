@@ -24,6 +24,7 @@ public class SceneManagement : MonoBehaviour
     [SerializeField] private SaveScene sceneParentEndingVeryBad;
     [SerializeField] private SaveScene sceneParentEndingNeutral;
 
+    [SerializeField] private SaveScene sceneChangementDay;
     
     [SerializeField] private InitObservableObject _initObservableObject;
     [SerializeField] private AdaptativeText _adaptativeText;
@@ -181,7 +182,9 @@ public class SceneManagement : MonoBehaviour
                 sceneParentEndingVeryBad.ActiveScene();
                 break;
         }
-    }    public void SceneToNeutralEnding()
+    }
+    
+    public void SceneToNeutralEnding()
     {
         switch (_openScene)
         {
@@ -199,5 +202,18 @@ public class SceneManagement : MonoBehaviour
                 break;
         }
     }
+
+    public void DiscussionToChangeDay()
+    {
+        sceneChangementDay.ActiveScene();
+        sceneParentDiscussion.DisactiveScene();
+        _openScene = "ChangeDay";
+    }
     
+    public void ChangeDayToDiscussion()
+    {
+        sceneParentDiscussion.ActiveScene();
+        sceneChangementDay.DisactiveScene();
+        _openScene = "Discussion";
+    }
 }
