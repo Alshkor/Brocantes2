@@ -16,7 +16,8 @@
         {
             "sentence": "Oh j’ai de la chance alors !",
             "idSentence": 8,
-            "canSayIf": [ 5, 7 ]
+            "canSayIf": [ 5, 7 ],
+            "blockPlayer": true
         },
         {
             "sentence": "Oui c’est parfait ! Je vais y aller merci",

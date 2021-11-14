@@ -52,17 +52,26 @@
         },
         {
             "sentence": "Voyez-vous je m’ennuie un peu ces derniers temps, auriez-vous un livre à vendre?",
-            "idSentence": 17
+            "idSentence": 17,
+            "blockPlayer": true
         },
         {
             "sentence": "Mais non mon petit, un livre pas un vase",
             "idSentence": 18,
-            "canSayIf": [ 100, 101 ]
+            "canSayIf": [ 101 ],
+            "blockPlayer": true
+        },
+        {
+            "sentence": "Mais non mon petit, un livre pas un vase",
+            "idSentence": 22,
+            "canSayIf": [ 100 ],
+            "blockPlayer": true
         },
         {
             "sentence": "Oh mais c’est une dédicace, quelle chance ! Ça doit augmenter sa valeur !",
             "idSentence": 19,
-            "canSayIf": [ 103 ]
+            "canSayIf": [ 103 ],
+            "blockPlayer": true
         },
         {
             "sentence": "Je le prends merci!",

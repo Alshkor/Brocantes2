@@ -71,6 +71,7 @@ public class SceneManagement : MonoBehaviour
     public void ExamineToInventory()
     {
         _openScene = "Inventory";
+        StaticObject.idComment = -1;
         sceneParentExamine.DisactiveScene();
         sceneParentInventory.ActiveScene();
         _initObservableObject.CloseObject();
