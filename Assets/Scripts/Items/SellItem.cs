@@ -72,6 +72,8 @@ public class SellItem : MonoBehaviour
         {
             StockingRessources.UpdateGold(priceItem);
             StockingRessources.UpdateReputation(priceItem);
+
+            IsItemSelect.destroyItem();
         }
         
         PNJManagement.Instance.ChangeSentenceCurrent();
