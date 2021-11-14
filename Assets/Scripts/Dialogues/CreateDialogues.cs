@@ -20,8 +20,27 @@ public class CreateDialogues : MonoBehaviour
 
     [SerializeField] private PNJManagement _pnjManagement;
 
+    private bool update = false;
+
     // Start is called before the first frame update
     void Start()
+    {
+        _listDialogues = new ListDialogues();
+
+        sentenceAlreadySaid = new List<int>();
+        sentenceUnavailable = new List<int>();
+    }
+
+    void Update()
+    {
+        if (!update)
+        {
+            UpdateSentences();
+            update = true;
+        }
+    }
+
+    public void UpdateSentences()
     {
         //Liste des dialogues qui convient à la personne devant nous. Doit être update quand l'on passe à une autre personne ou que
         //l'on fait des actions sur les objets
@@ -32,11 +51,11 @@ public class CreateDialogues : MonoBehaviour
 
         var jsonFiles = Resources.Load<TextAsset>("Discussions/Jour" + NumberDay.GetDay() + "/Player/"+ PNJManagement.GetCurrentPNJ());
         
+        Debug.Log("day : " + NumberDay.GetDay() + " current  " + PNJManagement.GetCurrentPNJ());
+        
         _listDialogues = JsonUtility.FromJson<ListDialogues>(jsonFiles.ToString());
-
-  
     }
-
+    
 
     public void UpdateSentenceUnavailable()
     {
@@ -187,16 +206,6 @@ public class ListDialogues
 
     public string NextSentence(List<int> sentenceSaidByPlayer, List<int> sentenceAlreadySaid)
     {
-        foreach (var st in sentenceSaidByPlayer)
-        {
-            Debug.Log("sentence said by player " + st);
-        }
-        
-        foreach (var st in sentenceAlreadySaid)
-        {
-            Debug.Log("alkready said " + st);
-        }
-        
         List<int> answerAvailable = new List<int>();
         foreach (var dial in listDialogues)
         {

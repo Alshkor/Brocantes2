@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -18,9 +19,27 @@ public class Carac : MonoBehaviour
     private ListDialogues _listeDialogues;
 
     public List<int> listObjectAccepted;
-    
+
+    private bool update = false;
     // Start is called before the first frame update
     void Start()
+    {
+        _sentenceSaid = new List<int>();
+        
+        _listeDialogues = new ListDialogues();
+    }
+
+    void Update()
+    {
+        if (!update)
+        {
+            UpdateSentence();
+            update = true;
+
+        }
+    }
+
+    void UpdateSentence()
     {
         _sentenceSaid = new List<int>();
         
@@ -29,17 +48,32 @@ public class Carac : MonoBehaviour
         var jsonFiles = Resources.Load<TextAsset>("Discussions/Jour" + NumberDay.GetDay() + "/PNJ/"+ _name );
         
         _listeDialogues = JsonUtility.FromJson<ListDialogues>(jsonFiles.ToString());
-
     }
+    
     
     private string Speak()
     {
-        int idNextSentence = _listeDialogues.NextSentenceID(CreateDialogues.sentenceAlreadySaid, _sentenceSaid);
-        var sentence = _listeDialogues.NextSentence(CreateDialogues.sentenceAlreadySaid, _sentenceSaid);
-        _sentenceSaid.Add(idNextSentence);
-        _playerDialogues.UpdateNumberAnswer(_listeDialogues.GetBlockPlayer(idNextSentence));
+        string sentence = "";
+        int idNextSentence;
+
+        try
+        {
+            idNextSentence = _listeDialogues.NextSentenceID(CreateDialogues.sentenceAlreadySaid, _sentenceSaid);
+            sentence = _listeDialogues.NextSentence(CreateDialogues.sentenceAlreadySaid, _sentenceSaid);
+            _sentenceSaid.Add(idNextSentence);
+            _playerDialogues.UpdateNumberAnswer(_listeDialogues.GetBlockPlayer(idNextSentence));
+        }
+        catch (Exception e)
+        {
+            Debug.Log("Esxception : " + e.ToString());
+            NumberDay.Instance.PassDay();
+            _playerDialogues.UpdateSentences();
+        }
+
+
         return sentence;
     }
+
 
     public void changeText()
     {

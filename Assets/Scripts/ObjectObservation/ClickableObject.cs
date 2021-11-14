@@ -19,9 +19,7 @@ public class ClickableObject : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit)) {
 
-                Debug.Log("On a touché : " + hit.transform.gameObject.name);
                 if (hit.transform.gameObject.tag == "eventTrigger"){
-                    Debug.Log("C'est un trigger");
                     ObjectEvent(hit.transform.gameObject.name);
                 } 
             }
@@ -46,7 +44,6 @@ public class ClickableObject : MonoBehaviour
             /*Si on appuie sur le bouton dans la boite : on joue de la musique*/
             case "BoxButton":
                 if (isActiveAudio) {
-                    Debug.Log("Music Play");
                     audioData = gameObject.GetComponent<AudioSource>();
                     audioData.Play(0);
                     isActiveAudio = false;

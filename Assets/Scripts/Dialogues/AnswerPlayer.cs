@@ -26,7 +26,6 @@ public class AnswerPlayer : MonoBehaviour
         transform.parent.gameObject.GetComponent<CreateDialogues>().UpdateSentenceSaid(idAnswer);
         transform.parent.gameObject.GetComponent<CreateDialogues>().UpdateSentenceUnavailable();
         _pnjManagement.ChangeSentenceCurrent();
-        Debug.Log("pk ca fait ca");
     }
     
     // Update is called once per frame

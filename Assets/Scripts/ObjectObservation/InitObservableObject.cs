@@ -15,7 +15,6 @@ public class InitObservableObject : MonoBehaviour
     public void SetNewObject()
     {
         initGameObject = StaticObject.activeObject;
-        Debug.Log(initGameObject);
         GameObject go = Instantiate(initGameObject, objectPosition, _camera.transform.rotation);
         go.transform.parent = transform;
         go.GetComponent<ClickableObject>()._camera = _camera;

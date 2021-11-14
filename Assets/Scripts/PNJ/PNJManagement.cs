@@ -10,8 +10,6 @@ public class PNJManagement : MonoBehaviour
 {
     private static string _currentPNJ;
 
-    private static List<string> _pngAlreadyPass;
-
     [SerializeField] private GameObject Vieux;
     [SerializeField] private GameObject Aristo;
     [SerializeField] private GameObject Primrose;
@@ -23,8 +21,6 @@ public class PNJManagement : MonoBehaviour
     void Awake()
     {
         Instance = this;
-        _pngAlreadyPass = new List<string>();
-        _currentPNJ = "primrose";
     }
 
     // Update is called once per frame
@@ -52,10 +48,10 @@ public class PNJManagement : MonoBehaviour
 
     public static void ChangePNJ(string name)
     {
-        _pngAlreadyPass.Add(_currentPNJ);
         _currentPNJ = name;
     }
 
+    /*
     public GameObject GetRandomPNJ()
     {
         List<string> PNJAvailable = new List<string>();
@@ -87,10 +83,14 @@ public class PNJManagement : MonoBehaviour
             Debug.Log("PNJ not found");
             return null;
         }
-    }
+    }*/
 
     public void ChangeSentenceCurrent()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
         Carac pnj = getPnjByName(_currentPNJ).GetComponent<Carac>();
         
         pnj.changeText();

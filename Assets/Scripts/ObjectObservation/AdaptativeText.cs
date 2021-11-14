@@ -45,13 +45,11 @@ public class AdaptativeText : MonoBehaviour
         }*/
 
         var jsonFiles = Resources.Load<TextAsset>("objects_cycle" + Mathf.Clamp(NumberDay.GetDay(),1,2));
-        Debug.Log("jsonFiles : " + jsonFiles);
-        
+
         _listObjects = JsonUtility.FromJson<ListTextObject>(jsonFiles.ToString());
 
         idObjectActuel = objectNameToId(StaticObject.activeObject.name);
-
-        Debug.Log("id : " + idObjectActuel);
+        
 
         _descriptionObject.GetComponent<UnityEngine.UI.Text>().text = _listObjects.GetDescriptionByID(idObjectActuel);
         _nameObject.GetComponent<UnityEngine.UI.Text>().text = _listObjects.GetNameByID(idObjectActuel);

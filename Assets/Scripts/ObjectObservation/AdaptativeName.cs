@@ -10,6 +10,5 @@ public class AdaptativeName : MonoBehaviour
     void Awake(){
         objectUsed = StaticObject.activeObject;
         gameObject.GetComponent<UnityEngine.UI.Text>().text = objectUsed.name;
-        Debug.Log("Nom de la description basée sur : " + objectUsed);
     }
 }
