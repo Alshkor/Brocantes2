@@ -1,0 +1,181 @@
+{
+    "ListDialogues": [
+        {
+            "sentence": "Bonjour ! Je suis revenue comme promis !",
+            "idSentence": 1
+        },
+        {
+            "sentence": "Pour tout dire, je ne sais pas exactement quoi prendre.",
+            "idSentence": 3,
+            "canSayIf" : [2]
+        },
+        {
+            "sentence": "Voyez-vous c’est bientôt notre anniversaire de mariage avec mon mari.",
+            "idSentence": 4
+        },
+        {
+            "sentence": "Ah il ne m’en a pas parlé. Ce n’était pas important j’imagine.",
+            "idSentence": 6,
+            "canSayIf": [ 5 ]
+        },
+        {
+            "sentence": "Sinon, je ne sais pas quoi lui prendre, pourriez-vous m’aider puisque vous l’avez déjà vu ?",
+            "idSentence": 7
+        },
+        { //On entame direct la phase où elle dit sanbackstory, on reviendra après sur l'étude de l'objet parfait
+            "sentence": "Cette voiture… Un enfant a dû la laisser à l’intérieur.",
+            "idSentence": 11,
+            "canSayIf": [ 10 ]
+        },
+        {
+            "sentence": "C’est ce que font les enfants après tout. Ils jouent sans faire attention et il faut les surveiller.",
+            "idSentence": 12,
+            "canSayIf": [ 10 ]
+        },
+        {
+            "sentence": "Excusez-moi, elle me ramène à tant de souvenirs.Dites… Vous avez des enfants?",
+            "idSentence": 15,
+            "canSayIf": [ 13, 14 ]
+        },
+        {
+            "sentence": "On en avait un nous aussi avec Luke. C’était le nôtre..",
+            "idSentence": 17,
+            "canSayIf": [ 16 ]
+        },
+        {
+            "sentence": "Jusqu’au jour où je l’avais emmené jouer au parc. Il avait pris son ballon.",
+            "idSentence": 18,
+            "canSayIf": [ 16 ]
+        },
+        {
+            "sentence": "J’avais très peu dormi la veille et j’ai juste fermé les yeux un instant, une minute à peine.",
+            "idSentence": 19,
+            "canSayIf": [ 16 ]
+        },
+        {
+            "sentence": "Ce laps de temps lui aura suffi à courir après son ballon jusque sur la route.",
+            "idSentence": 20,
+            "canSayIf": [ 16 ]
+        },
+        {
+            "sentence": "La suite est facile à deviner…",
+            "idSentence": 21,
+            "canSayIf": [ 16 ]
+        },
+        {
+            "sentence": "Comment osez-vous ?! Je ne reviendrai plus jamais, allez en enfer !",
+            "idSentence": 24,
+            "canSayIf": [ 22 ]
+        },
+        {
+            "sentence": "“C’est pour cela que Luke est si distant, vous comprenez. Cela l’a détruit. Nous parlons à peine depuis.”",
+            "idSentence": 25,
+            "canSayIf": [ 23 ]
+        },
+        {
+            "sentence": "Désolée, toutes ces émotions sont remontées d’un coup.",
+            "idSentence": 26,
+            "canSayIf": [ 23 ]
+        },
+        {
+            "sentence": "Non non ne vous en faites pas je dois rentrer.",
+            "idSentence": 28,
+            "canSayIf": [ 27 ]
+        },
+        {
+            "sentence": "Je vais prendre cet ours s’il vous-plaît, je vous laisse le jouet…",
+            "idSentence": 29,
+            "canSayIf": [ 27 ]
+        },
+        { //fin de la journée, good ending pour ce perso
+            "sentence": "Oui peut-être qu’avec ce cadeau ce sera possible… Merci pour tout !",
+            "idSentence": 31,
+            "canSayIf": [ 30 ]
+        },
+        { //On retourne maintenant sur les questions-réponses
+            "sentence": "Comme vous avez pu le voir, il se concentre énormément sur le sport depuis quelques temps.",
+            "idSentence": 32,
+            "canSayIf": [ 8 ]
+        },
+        {
+            "sentence": "Je…Oui c’est vrai… C’est juste que l’on se parle moins ces temps-ci.",
+            "idSentence": 33,
+            "canSayIf": [ 9 ]
+        },
+        {
+            "sentence": "Oh hum oui pourquoi pas. Je n’y avais pas pensé",
+            "idSentence": 38,
+            "canSayIf": [ 34 ]
+        },
+        { //+5 éthique + fin de journée
+            "sentence": "Je ferais mieux d’y aller alors. Merci pour votre aide !",
+            "idSentence": 39,
+            "canSayIf": [ 34 ]
+        },
+        {
+            "sentence": "Oui on peut dire ça...C’est ma faute en réalité…",
+            "idSentence": 40,
+            "canSayIf": [ 35, 36 ]
+        },
+        { //-5 éthique + fin de journée
+            "sentence": "Je vais y aller. Je n’aurais pas dû venir au revoir.",
+            "idSentence": 41,
+            "canSayIf": [ 37 ]
+        },
+        {
+            "sentence": "Je… j’aimerais mieux ne pas en parler, c’est assez compliqué.",
+            "idSentence": 44,
+            "canSayIf": [ 42 ]
+        },
+        {
+            "sentence": "Oh nous étions très proches, vous savez.",
+            "idSentence": 45,
+            "canSayIf": [ 43,49 ]
+        },
+        {
+            "sentence": "J’aime beaucoup peindre et parfois il me rejoignait.",
+            "idSentence": 46,
+            "canSayIf": [ 43,49 ]
+        },
+        {
+            "sentence": "Notre premier tableau représentait des roses blanches, ce sont mes fleurs préférées.",
+            "idSentence": 47,
+            "canSayIf": [ 43,49 ]
+        },
+        {
+            "sentence": "Si vous aviez vu son sourire lorsqu’il était fini, il était si fier du résultat.",
+            "idSentence": 48,
+            "canSayIf": [ 43, 49 ]
+        },
+        {
+            "sentence": "Oh je m’en rappelle encore très bien.",
+            "idSentence": 52,
+            "canSayIf": [ 50 ]
+        },
+        {
+            "sentence": "J’étais à la fête foraine avec des amies. J’essayais de gagner une peluche.",
+            "idSentence": 53,
+            "canSayIf": [ 50 ]
+        },
+        {
+            "sentence": "Luke était juste à côté et voyant comme j’avais du mal il en a gagné une pour moi !",
+            "idSentence": 54,
+            "canSayIf": [ 50 ]
+        },
+        { //Fin du dialogue, le joueur est invité à choisir un objet.
+            "sentence": "Enfin, bref la situation n’est plus la même. Avez-vous donc un objet à me suggérer ?",
+            "idSentence": 55,
+            "canSayIf": [ 50 ]
+        },
+        {
+            "sentence": "J’en ai encore, il ne veut juste plus l’utiliser.",
+            "idSentence": 56,
+            "canSayIf": [ 51 ]
+        },
+        {// fin du dialogue, joueur invité à choisir objet
+            "sentence": "Je suis toujours perdue, sauriez-vous quoi lui prendre ?",
+            "idSentence": 57,
+            "canSayIf": [ 51 ]
+        }
+    ]
+}

@@ -1,0 +1,130 @@
+{
+    "ListDialogues": [
+        {
+            "sentence": "Je vois ça ahah, bienvenue  ! En quoi puis-je vous aider ?",
+            "idSentence": 2,
+            "canSayIf": [ 1 ],
+            "available": true
+        },
+        {
+            "sentence": "Je l’ai croisé hier, il est venu peu de temps après vous.",
+            "idSentence": 5,
+            "canSayIf": [ 4 ],
+            "available": true
+        },
+        {
+            "sentence": "Que fait-il en ce moment ?",
+            "idSentence": 8,
+            "canSayIf": [ 7 ],
+            "available": true
+        },
+        {
+            "sentence": "Vous devriez savoir, tout de même, vous êtes mariés.",
+            "idSentence": 9,
+            "canSayIf": [ 7 ],
+            "available": true
+        },
+        {
+            "sentence": "Que vous arrive-t-il ?!",
+            "idSentence": 10,
+            "canSayIf": [ 105 ],
+            "available": false
+        },
+        { //on commence les réponses dans la phase postevent nounours
+            "sentence": "Que voulez-vous dire ?",
+            "idSentence": 13,
+            "canSayIf": [ 12 ],
+            "available": true
+        },
+        {
+            "sentence": "Calmez-vous ce n’est qu’un jouet.", //-5 éthique
+            "idSentence": 14,
+            "canSayIf": [ 12 ],
+            "available": true
+        },
+        {
+            "sentence": "Oui, 2 enfants.",
+            "idSentence": 16,
+            "canSayIf": [ 15 ],
+            "available": true
+        },
+        { //-10 éthique
+            "sentence": "Faites en un autre au pire",
+            "idSentence": 22,
+            "canSayIf": [ 21 ],
+            "available": true
+        },
+        {
+            "sentence": "Je suis désolé… Je ne peux même pas imaginer votre douleur.",
+            "idSentence": 23,
+            "canSayIf": [ 21 ],
+            "available": true
+        },
+        {
+            "sentence": "Ce n’est pas grave, prenez votre temps, voulez-vous vous asseoir ?",
+            "idSentence": 27,
+            "canSayIf": [ 26 ],
+            "available": true
+        },
+        {
+            "sentence": "Vous devriez insister avec votre mari…",
+            "idSentence": 30,
+            "canSayIf": [ 29 ],
+            "available": true
+        },
+        {
+            "sentence": "Alors pourquoi ne pas lui offrir une place pour un match sportif ?",
+            "idSentence": 34,
+            "canSayIf": [ 32 ],
+            "available": true
+        },
+        {
+            "sentence": "Y a-t-il une raison à cette passion soudaine ?",
+            "idSentence": 35,
+            "canSayIf": [ 32 ],
+            "available": true
+        },
+        {
+            "sentence": "Oh excusez-moi, je ne savais pas. S’est-il passé quelque chose ?",
+            "idSentence": 36,
+            "canSayIf": [ 33 ],
+            "available": true
+        },
+        {
+            "sentence": "Hum allez voir un psy je pense ce sera plus utile.",
+            "idSentence": 37,
+            "canSayIf": [ 33 ],
+            "available": true
+        },
+        {
+            "sentence": "Dites m’en plus, ça ne peut pas être que ça.",
+            "idSentence": 42,
+            "canSayIf": [ 40 ],
+            "available": true
+        },
+        {
+            "sentence": "Mais comment étiez-vous avant cet incident ?",
+            "idSentence": 43,
+            "canSayIf": [ 40 ],
+            "available": true
+        },
+        {
+            "sentence": "Pardon, c’était indiscret,mais vous deviez bien être attachés l’un à l’autre auparavant, non ?",
+            "idSentence": 49,
+            "canSayIf": [ 44 ],
+            "available": true
+        },
+        {
+            "sentence": "Et concernant votre rencontre ?",
+            "idSentence": 50,
+            "canSayIf": [ 48 ],
+            "available": true
+        },
+        {
+            "sentence": "Pourquoi ne pas lui offrir de la peinture alors ?",
+            "idSentence": 51,
+            "canSayIf": [ 48 ],
+            "available": true
+        }
+    ]
+}
