@@ -16,11 +16,13 @@ public class PNJManagement : MonoBehaviour
     [SerializeField] private GameObject Aristo;
     [SerializeField] private GameObject Primrose;
     [SerializeField] private GameObject Luke;
-    
+
+    public static PNJManagement Instance;
     
     // Start is called before the first frame update
     void Awake()
     {
+        Instance = this;
         _pngAlreadyPass = new List<string>();
         _currentPNJ = "vieux";
     }
@@ -103,6 +105,11 @@ public class PNJManagement : MonoBehaviour
     {
         return getPnjByName(GetCurrentPNJ()).GetComponent<Carac>()._sentenceSaid;
     }
-    
+
+    public bool CurrentAccept(int idItem)
+    {
+        //Renvoie TRUE si le pnj accepte la transaction (possiblement rajouter le système de prix, si il est trop cher)
+        return getPnjByName(GetCurrentPNJ()).GetComponent<Carac>().listObjectAccepted.Contains(idItem);
+    }
     
 }

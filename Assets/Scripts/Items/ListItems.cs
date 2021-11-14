@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ListItems : MonoBehaviour
 {
@@ -31,7 +32,7 @@ public class ListItems : MonoBehaviour
         {
             GameObject item = _items[j];
             item.name = truc.objectName;
-            item.AddComponent<SpriteRenderer>();
+            item.AddComponent<Image>();
             item.AddComponent<ItemScript>();
             item.GetComponent<ItemScript>()._selection = bg;
             item.GetComponent<ItemScript>()._price = truc.recommandedPrice;

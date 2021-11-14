@@ -21,6 +21,10 @@ public class NumberDay : MonoBehaviour
     public static void PassDay()
     {
         _day++;
+        if (_day == 6)
+        {
+            StockingRessources.Ending();
+        }
     }
     
 }

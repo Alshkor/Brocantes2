@@ -62,4 +62,19 @@ public class IsItemSelect : MonoBehaviour
     {
         return itemSelect;
     }
+
+    public static string GetNameItemSelect()
+    {
+        return itemSelect.GetComponent<ItemScript>().GetName();
+    }
+
+    public static bool IsEventDeclenched()
+    {
+        return GetItemSelect().GetComponent<ItemScript>().eventDeclenched;
+    }
+    
+    public static void DeclenchEvent()
+    {
+        GetItemSelect().GetComponent<ItemScript>().eventDeclenched = true;
+    }
 }

@@ -1193,7 +1193,7 @@ GameObject:
   - component: {fileID: 7780063840622623325}
   - component: {fileID: 7780063840622623324}
   m_Layer: 0
-  m_Name: Montre
+  m_Name: "Montre \xE0 gousset"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

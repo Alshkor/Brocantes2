@@ -24,7 +24,7 @@ public class StockingRessources : MonoBehaviour
     void Awake()
     {
         //Pour l'instant, on fix comme ca les valeurs
-        InitializeRessources(0,1000000, 0, 50,20, 25);
+        InitializeRessources(0,500, 0, 100,20, 50);
         
 
     }
@@ -62,7 +62,10 @@ public class StockingRessources : MonoBehaviour
         
         //On fix le nombre de gold max a 100 et min a 0
         Mathf.Clamp(_gold, _minGold, _maxGold);
-
+        if (_gold.Equals(_minGold))
+        {
+            SceneManagement.Instance.SceneToLooseGold();
+        } 
 
     }
     
@@ -74,6 +77,11 @@ public class StockingRessources : MonoBehaviour
         
         //On fix le nombre de gold max a 100 et min a 0
         Mathf.Clamp(_reputation, _minRep, _maxRep);
+        
+        if (_reputation.Equals(_minRep))
+        {
+            SceneManagement.Instance.SceneToLooseRep();
+        } 
     }
 
     //Retourne le nombre de gold du joueur
@@ -86,6 +94,30 @@ public class StockingRessources : MonoBehaviour
     public static float GetReputation()
     {
         return _reputation;
+    }
+
+    public static void Ending()
+    {
+        if (_reputation > 90 && _gold > 120)
+        {
+            SceneManagement.Instance.SceneToGoodEnding();
+        }
+        else if (_reputation > 90 && _gold < 120)
+        {
+            SceneManagement.Instance.SceneToBonteEnding();
+        }
+        else if (_reputation < 30 && _gold > 200)
+        {
+            SceneManagement.Instance.SceneToMoulagaEnding();
+        }
+        else if(_reputation < 30 && _gold < 50) 
+        {
+            SceneManagement.Instance.SceneToBadEnding();
+        }
+        else
+        {
+            SceneManagement.Instance.SceneToNeutralEnding();
+        }
     }
     
 }

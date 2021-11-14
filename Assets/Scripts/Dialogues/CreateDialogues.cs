@@ -41,11 +41,6 @@ public class CreateDialogues : MonoBehaviour
         {
             sentenceUnavailable.Add(transform.GetChild(i).GetComponent<AnswerPlayer>().idAnswer);
         }
-
-        foreach (var id in sentenceAlreadySaid)
-        {
-            Debug.Log("Sentence said : " + id);
-        }
     }
 
     public void UpdateSentenceSaid(int id)
@@ -54,7 +49,7 @@ public class CreateDialogues : MonoBehaviour
     }
 
 
-    public void UpdateNumberAnswer()
+    public void UpdateNumberAnswer(bool blockPlayer)
     {
         //A changer avec une fonction pour calculer le nombre de boite de dialogue disponible
         //numberDialogue = 3;
@@ -100,6 +95,7 @@ public class CreateDialogues : MonoBehaviour
                 trans = dialogue.GetComponent<RectTransform>();
                 trans.SetParent(gameObject.transform);
                 trans.anchoredPosition = new Vector2(0,75);
+                trans.localScale = new Vector3(1, 1, 1);
 
                 dialogue = Instantiate(_button);
                 dialogue.AddComponent<AnswerPlayer>();
@@ -108,6 +104,7 @@ public class CreateDialogues : MonoBehaviour
                 trans = dialogue.GetComponent<RectTransform>();
                 trans.SetParent(gameObject.transform);
                 trans.anchoredPosition = new Vector2(0, -75);
+                trans.localScale = new Vector3(1, 1, 1);
                 break;
             case 1:
                 dialogue = Instantiate(_button);
@@ -117,12 +114,14 @@ public class CreateDialogues : MonoBehaviour
                 trans = dialogue.GetComponent<RectTransform>();
                 trans.SetParent(gameObject.transform);
                 trans.anchoredPosition = new Vector2(0,0);
+                trans.localScale = new Vector3(1, 1, 1);
                 break;
             case 0:
                 dialogue = (Instantiate(_button));
                 trans = dialogue.GetComponent<RectTransform>();
                 trans.SetParent(gameObject.transform);
                 trans.anchoredPosition = new Vector2(0,0);
+                trans.localScale = new Vector3(1, 1, 1);
                 break;
             default:
                 dialogue = Instantiate(_button);
@@ -132,6 +131,7 @@ public class CreateDialogues : MonoBehaviour
                 trans = dialogue.GetComponent<RectTransform>();
                 trans.SetParent(gameObject.transform);
                 trans.anchoredPosition = new Vector2(0,75);
+                trans.localScale = new Vector3(1, 1, 1);
 
                 dialogue = Instantiate(_button);
                 dialogue.AddComponent<AnswerPlayer>();
@@ -140,6 +140,7 @@ public class CreateDialogues : MonoBehaviour
                 trans = dialogue.GetComponent<RectTransform>();
                 trans.SetParent(gameObject.transform);
                 trans.anchoredPosition = new Vector2(0,0);
+                trans.localScale = new Vector3(1, 1, 1);
                 
                 dialogue = Instantiate(_button);
                 dialogue.AddComponent<AnswerPlayer>();
@@ -148,9 +149,33 @@ public class CreateDialogues : MonoBehaviour
                 trans = dialogue.GetComponent<RectTransform>();
                 trans.SetParent(gameObject.transform);
                 trans.anchoredPosition = new Vector2(0, -75);
+                trans.localScale = new Vector3(1, 1, 1);
                 break;
         }
+
+        if (blockPlayer)
+        {
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                transform.GetChild(i).GetComponent<Button>().interactable = false;
+            }
+        }
     }
+
+    public static void AddIdSentenceSaid(int id)
+    {
+        sentenceAlreadySaid.Add(id);
+    }
+
+    public void DeblockAnswerPlayer()
+    {
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            transform.GetChild(i).GetComponent<Button>().interactable = true;
+        }
+    }
+    
+
 }
 
 public class ListDialogues
@@ -219,6 +244,19 @@ public class ListDialogues
         }
 
         throw new Exception("Pas d'id correspondant");
+    }
+    
+    public bool GetBlockPlayer(int id)
+    {
+        foreach (var dial in listDialogues)
+        {
+            if (dial.idSentence == id)
+            {
+                return dial.blockPlayer;
+            }
+        }
+
+        return false;
     }
 
     public List<String> GetAnswer(List<int> sentenceSaidByPNJ, List<int> sentenceAlreadySaid)
@@ -290,8 +328,12 @@ public class DialoguesPNJ
     //Int représentant ce que va répondre le PNJ (pour pouvoir "retrouver" ce qu'a dit le joueur et adapter la réponse du pnj)
     public int idSentence;
     
-    //Bool pour savoir si la phrase est bloqué ou pas
+    //List d'int si le joueur a dit ou fait un des int present (qui représente une phrase ou une action)
+    //Alors le dialogue peut avoir lieu
     public List<int> canSayIf;
+    
+    //Bool, si true alors quand le pnj dit la phrase ca bloque les réponses du joueur en attente de vente
+    public bool blockPlayer;
 
     public bool canSay(List<int> sentenceByPlayer)
     {

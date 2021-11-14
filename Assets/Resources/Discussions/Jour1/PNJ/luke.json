@@ -1,2 +1,32 @@
 ﻿{
+
+  "ListDialogues": [
+    {
+      "sentence": "Hey duuuude!",
+      "idSentence": 1
+    },
+    {
+      "sentence": "J'aurais besoin d'un vase s'il te plait mec!",
+      "idSentence": 3
+    },
+    {
+      "sentence": "Ouais t’es devin non? C’est pour elle le vase.",
+      "idSentence": 6,
+      "canSayif": [ 4 ]
+    },
+    {
+      "sentence": "Ah mince je voulais acheter un vase pour ma femme.",
+      "idSentence": 7,
+      "canSayif": [ 5 ]
+    },
+    {
+      "sentence": "Ah… elle exagère quand même.",
+      "idSentence": 9
+    },
+    {
+      "sentence": "Bon bah salut mec, on se reverra p't'être.",
+      "idSentence": 10
+    }
+  ]
+
 }

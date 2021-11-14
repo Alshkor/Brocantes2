@@ -16,6 +16,8 @@ public class Carac : MonoBehaviour
 
     //Liste des dialogues du personnage le jour qui va bien
     private ListDialogues _listeDialogues;
+
+    public List<int> listObjectAccepted;
     
     // Start is called before the first frame update
     void Start()
@@ -32,9 +34,10 @@ public class Carac : MonoBehaviour
     
     private string Speak()
     {
+        int idNextSentence = _listeDialogues.NextSentenceID(CreateDialogues.sentenceAlreadySaid, _sentenceSaid);
         var sentence = _listeDialogues.NextSentence(CreateDialogues.sentenceAlreadySaid, _sentenceSaid);
-        _sentenceSaid.Add(_listeDialogues.NextSentenceID(CreateDialogues.sentenceAlreadySaid, _sentenceSaid));
-
+        _sentenceSaid.Add(idNextSentence);
+        _playerDialogues.UpdateNumberAnswer(_listeDialogues.GetBlockPlayer(idNextSentence));
         return sentence;
     }
 
@@ -42,7 +45,14 @@ public class Carac : MonoBehaviour
     {
 
         TextPersonnage.UpdateSentence(Speak());
-        _playerDialogues.UpdateNumberAnswer();
+
+    }
+
+    private void changeTextForce(int id)
+    {
+        TextPersonnage.UpdateSentence(_listeDialogues.GetSentenceByID(id));
+        _sentenceSaid.Add(id);
+        _playerDialogues.UpdateNumberAnswer(_listeDialogues.GetBlockPlayer(id));
     }
     
     

@@ -25,7 +25,5 @@ public class UpdatePriceItem : MonoBehaviour
         {
             _text.text = "Prix : ";
         }
-
-
     }
 }

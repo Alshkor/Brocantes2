@@ -52,26 +52,35 @@
         },
         {
             "sentence": "Voyez-vous je m�ennuie un peu ces derniers temps, auriez-vous un livre � vendre?",
-            "idSentence": 17
+            "idSentence": 17,
+            "blockPlayer": true
         },
         {
             "sentence": "Mais non mon petit, un livre pas un vase",
             "idSentence": 18,
-            "canSayIf": [ 100, 101 ]
+            "canSayIf": [ 100 ],
+            "blockPlayer": true
+        },
+        {
+            "sentence": "Mais non mon petit, un livre pas un vase",
+            "idSentence": 19,
+            "canSayIf": [ 101 ],
+            "blockPlayer": true
         },
         {
             "sentence": "Oh mais c�est une d�dicace, quelle chance ! �a doit augmenter sa valeur !",
-            "idSentence": 19,
-            "canSayIf": [ 103 ]
+            "idSentence": 20,
+            "canSayIf": [ 103 ],
+            "blockPlayer": true
         },
         {
             "sentence": "Je le prends merci!",
-            "idSentence": 20,
+            "idSentence": 21,
             "canSayIf": [ 102, 19 ]
         },
         {
             "sentence": "Je repasserai probablement dans les prochains jours. Portez vous bien mon petit !",
-            "idSentence": 21
+            "idSentence": 22
         }
     ]
 

@@ -1,2 +1,30 @@
 ﻿{
+
+  "ListDialogues": [
+    {
+      "sentence": "Euh, Bonjour?",
+      "idSentence": 2,
+      "canSayIf": [1],
+      "available": true
+    },
+    {
+      "sentence": "Ah vous êtes le mari de Mme.Wright?",
+      "idSentence": 4,
+      "canSayIf": [ 3 ],
+      "available": true
+    },
+    {
+      "sentence": "J’ai déjà tout vendu aujourd’hui désolé.",
+      "idSentence": 5,
+      "canSayIf": [ 3 ],
+      "available": true
+    },
+    {
+      "sentence": "Elle est déjà passée en acheter un.",
+      "idSentence": 8,
+      "canSayIf": [6,7],
+      "available": true
+    }
+  ]
+
 }

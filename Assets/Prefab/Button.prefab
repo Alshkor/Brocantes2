@@ -93,6 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: 
+  idAnswer: 0
 --- !u!1 &8890880800779808275
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,3 +241,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: 
+  idAnswer: 0

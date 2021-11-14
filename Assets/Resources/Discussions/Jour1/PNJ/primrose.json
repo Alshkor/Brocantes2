@@ -1,2 +1,43 @@
-ï»¿{
+{
+    "ListDialogues": [
+        {
+            "sentence": "Bonjour ! Vous êtes encore ouvert ?",
+            "idSentence": 1
+        },
+        {
+            "sentence": "J’aurais besoin d’un vase s’il vous plaît ! Pas trop cher si possible.",
+            "idSentence": 3
+        },
+        {
+            "sentence": "Oh non, c’est juste que mon mari n’apprécierait pas.",
+            "idSentence": 6,
+            "canSayIf": [ 4 ]
+        },
+        {
+            "sentence": "Oh j’ai de la chance alors !",
+            "idSentence": 8,
+            "canSayIf": [ 5, 7 ]
+        },
+        {
+            "sentence": "Oui c’est parfait ! Je vais y aller merci",
+            "idSentence": 9,
+            "canSayif": [ 100 ]
+        },
+        {
+            "sentence": "Oh c’est gentil… À vrai dire, ça ne va pas trop en ce moment…",
+            "idSentence": 12,
+            "canSayIf": [ 11 ]
+        },
+        {
+            "sentence": "Mais je ne veux pas vous embêter avec ça !",
+            "idSentence": 13,
+            "canSayIf": [ 12 ]
+        },
+        {
+            "sentence": "Je reviendrai sûrement dans les prochains jours, au revoir !",
+            "idSentence": 14,
+            "canSayIf": [13]
+        }
+    ]
+
 }
