@@ -21,6 +21,7 @@ public class ListItems : MonoBehaviour
     void Start()
     {
         _items = new List<GameObject>();
+
         for (int i = 0; i < transform.childCount - 1; i++)
         {
             _items.Add(transform.GetChild(i).gameObject);
@@ -52,11 +53,12 @@ public class ListItems : MonoBehaviour
     public void GetItemNextIt()
     {
         _items = new List<GameObject>();
+        Debug.Log("enfants : " + transform.childCount);
         for (int i = 0; i < transform.childCount - 1; i++)
         {
             _items.Add(transform.GetChild(i).gameObject);
         }
-        
+        Debug.Break();
         
         ListItemsJSon _listItems = new ListItemsJSon();
 
@@ -64,10 +66,11 @@ public class ListItems : MonoBehaviour
         
         _listItems = JsonUtility.FromJson<ListItemsJSon>(jsonFiles.ToString());
 
-        
+        Debug.Log("raille de itelms " + _listItems.ListObjects.Count);
         int j = 0;
         foreach (var truc in _listItems.ListObjects)
         {
+            Debug.Log("taille : " + j);
             GameObject item = _items[j];
             item.name = truc.objectName;
             item.AddComponent<Image>();
@@ -77,6 +80,7 @@ public class ListItems : MonoBehaviour
             item.GetComponent<ItemScript>().id = truc.idObject;
             j++;
         }
+        
     } 
 }
 
