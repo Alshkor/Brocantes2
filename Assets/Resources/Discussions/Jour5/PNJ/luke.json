@@ -1,0 +1,134 @@
+﻿{
+
+  "listDialogues": [
+    {
+      "sentence": "Yo! Comment ça va duuuude?",
+      "idSentence": 1
+    },
+    {
+      "sentence": "Luke Wright voyons ! Qui d’autres pourrait-ce être ?",
+      "idSentence": 5,
+      "canSayif": [ 2 ]
+    },
+    {
+      "sentence": "Mais bro, il fait toujours trop chaud en ville!",
+      "idSentence": 6,
+      "canSayif": [ 3 ]
+    },
+    {
+      "sentence": "Bref. Je dois trouver un cadeau pour mon anniversaire de mariage.",
+      "idSentence": 8,
+      "canSayif": [ 4, 7 ]
+    },
+    {
+      "sentence": "Disons que c’est compliqué…",
+      "idSentence": 11,
+      "canSayif": [ 9 ]
+    },
+    {
+      "sentence": "Merci”",
+      "idSentence": 12,
+      "canSayif": [ 10 ]
+    },
+    {
+      "sentence": "Je dois faire vite, que me conseilles-tu mec ?",
+      "idSentence": 13,
+      "canSayif": [ 11, 31, 45 ]
+    },
+    {
+      "sentence": "...",
+      "idSentence": 16,
+      "canSayif": [ 14 ]
+    },
+    {
+      "sentence": "C’est compliqué… parce que nous avons perdu notre enfant il y a quelques années.",
+      "idSentence": 17
+    },
+    {
+      "sentence": "Occupes-toi de tes oignons",
+      "idSentence": 18,
+      "canSayif": [ 15 ]
+    },
+    {
+      "sentence": "Ne vous en faites pas…",
+      "idSentence": 21,
+      "canSayif": [ 19 ]
+    },
+    {
+      "sentence": "C’est juste que j’aimerais pouvoir remonter le temps...”",
+      "idSentence": 22,
+      "canSayif": [ 20, 39 ]
+    },
+    {
+      "sentence": "Je lui en veut encore de ne pas avoir protégé notre fils…",
+      "idSentence": 23
+    },
+    {
+      "sentence": "Mais en réalité, c’est surtout le destin qui est responsable.",
+      "idSentence": 24
+    },
+    {
+      "sentence": "Je n’ai fait que fuir...",
+      "idSentence": 25
+    },
+    {
+      "sentence": "...en faisant du sport de manière obsessionnelle pour oublier.",
+      "idSentence": 26
+    },
+    {
+      "sentence": "J’aimerais repartir sur de nouvelles bases…",
+      "idSentence": 27
+    },
+    {
+      "sentence": "Je sais que ma femme adore les fleurs blanches...",
+      "idSentence": 28
+    },
+    {
+      "sentence": "Mais je ne me souviens plus de quel type de fleur blanches.",
+      "idSentence": 29
+    },
+    {
+      "sentence": "Tu veux que je te casse ta gueule ? Nik toi.",
+      "idSentence": 30,
+      "canSayif": [ 20 ]
+    },
+    {
+      "sentence": "Merci, je vous fais confiance.",
+      "idSentence": 33,
+      "canSayif": [ 32 ]
+    },
+    {
+      "sentence": "Ces roses blanches… C’était les préférées de Primrose.",
+      "idSentence": 35,
+      "canSayif": [ 34 ]
+    },
+    {
+      "sentence": "Elle adorait en peindre une sur chacun de ses tableaux.",
+      "idSentence": 36
+    },
+    {
+      "sentence": "Oui, c’est d’ailleurs comme ça que je suis tombé amoureux  d’elle...",
+      "idSentence": 39,
+      "canSayif": [ 37, 38 ]
+    },
+    {
+      "sentence": "Ce cadre est vraiment joli.",
+      "idSentence": 40
+    },
+    {
+      "sentence": "C’est une idée fantastique. Exactement le cadeau qu’il me fallait !",
+      "idSentence": 43,
+      "canSayif": [ 41 ]
+    },
+    {
+      "sentence": "Merci infiniment dude.",
+      "idSentence": 44
+    },
+    {
+      "sentence": "C’est si surprenant ?",
+      "idSentence": 45,
+      "canSayif": [ 42 ]
+    }
+  ]
+
+}

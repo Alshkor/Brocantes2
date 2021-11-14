@@ -1,0 +1,108 @@
+﻿{
+
+  "listDialogues": [
+    {
+      "sentence": "Vous êtes qui déjà ?",
+      "idSentence": 2,
+      "canSayIf": [ 1 ],
+      "available": true
+    },
+    {
+      "sentence": "Pourquoi vous êtes torse nu?",
+      "idSentence": 3,
+      "canSayIf": [ 1 ],
+      "available": true
+    },
+    {
+      "sentence": "Bonjour… “Dude”?",
+      "idSentence": 4,
+      "canSayIf": [ 1 ],
+      "available": true
+    },
+    {
+      "sentence": "Euh…",
+      "idSentence": 7,
+      "canSayIf": [ 5, 6 ],
+      "available": true
+    },
+    {
+      "sentence": "Ah! Vous semblez heureux tout à coup !",
+      "idSentence": 34,
+      "canSayIf": [ 108 ],
+      "available": false
+    },
+    {
+      "sentence": "Vous n’avez pas l’air ravi… Il y a une raison.",
+      "idSentence": 9,
+      "canSayIf": [ 8 ],
+      "available": true
+    },
+    {
+      "sentence": "Vous êtes au bon endroit.",
+      "idSentence": 10,
+      "canSayIf": [ 8 ],
+      "available": true
+    },
+    {
+      "sentence": "...",
+      "idSentence": 14,
+      "canSayIf": [ 11 ],
+      "available": true
+    },
+    {
+      "sentence": "Un problème ?",
+      "idSentence": 15,
+      "canSayIf": [ 11 ],
+      "available": true
+    },
+    {
+      "sentence": "Je suis vraiment désolé pour vous…",
+      "idSentence": 19,
+      "canSayIf": [ 16 ],
+      "available": true
+    },
+    {
+      "sentence": "C’est une bouche à nourrir en moins !",
+      "idSentence": 20,
+      "canSayIf": [ 17 ],
+      "available": true
+    },
+    {
+      "sentence": "Désolé Musclor, je suis pas fleuriste…",
+      "idSentence": 31,
+      "canSayIf": [ 29 ],
+      "available": true
+    },
+    {
+      "sentence": "Je peux vous aider",
+      "idSentence": 32,
+      "canSayIf": [ 29 ],
+      "available": true
+    },
+    {
+      "sentence": "Elle était peintre ?",
+      "idSentence": 37,
+      "canSayIf": [ 36 ],
+      "available": true
+    },
+    {
+      "sentence": "Elle devait être talentueuse.",
+      "idSentence": 38,
+      "canSayIf": [ 36 ],
+      "available": true
+    },
+    {
+      "sentence": "Peut-être vous auriez une photo de vous et votre femme ?",
+      "idSentence": 41,
+      "canSayIf": [ 40 ],
+      "available": true
+    },
+    {
+      "sentence": "Vous êtes sensible à l’art Musclor ?",
+      "idSentence": 42,
+      "canSayIf": [ 40 ],
+      "available": true
+    }
+  ]
+
+}
