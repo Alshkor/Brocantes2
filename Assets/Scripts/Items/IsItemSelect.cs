@@ -77,4 +77,11 @@ public class IsItemSelect : MonoBehaviour
     {
         GetItemSelect().GetComponent<ItemScript>().eventDeclenched = true;
     }
+
+    public static void destroyItem()
+    {
+        select = false;
+        Destroy(itemSelect);
+        itemSelect = null;
+    }
 }
