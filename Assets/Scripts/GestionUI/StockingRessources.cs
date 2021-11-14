@@ -62,7 +62,7 @@ public class StockingRessources : MonoBehaviour
         
         //On fix le nombre de gold max a 100 et min a 0
         Mathf.Clamp(_gold, _minGold, _maxGold);
-        if (_gold.Equals(_minGold))
+        if (_gold <= _minGold)
         {
             SceneManagement.Instance.SceneToLooseGold();
         } 
@@ -77,9 +77,12 @@ public class StockingRessources : MonoBehaviour
         
         //On fix le nombre de gold max a 100 et min a 0
         Mathf.Clamp(_reputation, _minRep, _maxRep);
-        
-        if (_reputation.Equals(_minRep))
+
+        //Debug.Log("Notre réputation : " + _reputation + ". On meurt si on atteinds : " + _minRep);
+        //Debug.Log(_reputation.Equals(_minRep));
+        if (_reputation <= _minRep)
         {
+            Debug.Log("on est mort");
             SceneManagement.Instance.SceneToLooseRep();
         } 
     }
