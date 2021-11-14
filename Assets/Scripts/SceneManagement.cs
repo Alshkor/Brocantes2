@@ -214,5 +214,7 @@ public class SceneManagement : MonoBehaviour
         sceneParentDiscussion.ActiveScene();
         sceneChangementDay.DisactiveScene();
         _openScene = "Discussion";
+        PNJManagement.Instance.ChangeSentenceCurrent();
+
     }
 }

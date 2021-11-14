@@ -53,6 +53,11 @@ public class Carac : MonoBehaviour
     
     private string Speak()
     {
+        if (_sentenceSaid == null)
+        {
+            UpdateSentence();
+        }
+        
         string sentence = "";
         int idNextSentence;
 
@@ -65,8 +70,11 @@ public class Carac : MonoBehaviour
         }
         catch (Exception e)
         {
-            Debug.Log("Esxception : " + e.ToString());
+            //Debug.Log("Esxception : " + e.ToString());
             NumberDay.Instance.PassDay();
+            Debug.Log("Currnet personnage : " + PNJManagement.GetCurrentPNJ());
+            _sentenceSaid = null;
+            
             _playerDialogues.UpdateSentences();
         }
 
