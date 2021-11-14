@@ -33,7 +33,10 @@ public class CreateDialogues : MonoBehaviour
         var jsonFiles = Resources.Load<TextAsset>("Discussions/Jour" + NumberDay.GetDay() + "/Player/"+ PNJManagement.GetCurrentPNJ());
         
         _listDialogues = JsonUtility.FromJson<ListDialogues>(jsonFiles.ToString());
+
+  
     }
+
 
     public void UpdateSentenceUnavailable()
     {
@@ -184,6 +187,16 @@ public class ListDialogues
 
     public string NextSentence(List<int> sentenceSaidByPlayer, List<int> sentenceAlreadySaid)
     {
+        foreach (var st in sentenceSaidByPlayer)
+        {
+            Debug.Log("sentence said by player " + st);
+        }
+        
+        foreach (var st in sentenceAlreadySaid)
+        {
+            Debug.Log("alkready said " + st);
+        }
+        
         List<int> answerAvailable = new List<int>();
         foreach (var dial in listDialogues)
         {

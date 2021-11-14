@@ -1,5 +1,5 @@
 {
-    "ListDialogues": [
+    "listDialogues": [
         {
             "sentence": "Bonjour ! Vous êtes encore ouvert ?",
             "idSentence": 1
@@ -14,9 +14,15 @@
             "canSayIf": [ 4 ]
         },
         {
+            "sentence": "",
+            "idSentence": 7,
+            "canSayIf": [ 4 ]
+        },
+        {
             "sentence": "Oh j’ai de la chance alors !",
             "idSentence": 8,
-            "canSayIf": [ 5, 7 ]
+            "canSayIf": [ 5, 7 ],
+            "blockPlayer": true
         },
         {
             "sentence": "Oui c’est parfait ! Je vais y aller merci",
@@ -31,7 +37,7 @@
         {
             "sentence": "Mais je ne veux pas vous embêter avec ça !",
             "idSentence": 13,
-            "canSayIf": [ 12 ]
+            "canSayIf": [ 11 ]
         },
         {
             "sentence": "Je reviendrai sûrement dans les prochains jours, au revoir !",

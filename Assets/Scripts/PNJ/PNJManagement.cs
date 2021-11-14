@@ -24,7 +24,7 @@ public class PNJManagement : MonoBehaviour
     {
         Instance = this;
         _pngAlreadyPass = new List<string>();
-        _currentPNJ = "vieux";
+        _currentPNJ = "primrose";
     }
 
     // Update is called once per frame
