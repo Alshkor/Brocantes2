@@ -1,13 +1,13 @@
 {
     "ListDialogues": [
         {
-            "sentence": "Je vois ça ahah, bienvenue  ! En quoi puis-je vous aider ?",
+            "sentence": "Je vois ï¿½a ahah, bienvenue  ! En quoi puis-je vous aider ?",
             "idSentence": 2,
             "canSayIf": [ 1 ],
             "available": true
         },
         {
-            "sentence": "Je l’ai croisé hier, il est venu peu de temps après vous.",
+            "sentence": "Je lï¿½ai croisï¿½ hier, il est venu peu de temps aprï¿½s vous.",
             "idSentence": 5,
             "canSayIf": [ 4 ],
             "available": true
@@ -19,7 +19,7 @@
             "available": true
         },
         {
-            "sentence": "Vous devriez savoir, tout de même, vous êtes mariés.",
+            "sentence": "Vous devriez savoir, tout de mï¿½me, vous ï¿½tes mariï¿½s.",
             "idSentence": 9,
             "canSayIf": [ 7 ],
             "available": true
@@ -30,14 +30,14 @@
             "canSayIf": [ 105 ],
             "available": false
         },
-        { //on commence les réponses dans la phase postevent nounours
+        {
             "sentence": "Que voulez-vous dire ?",
             "idSentence": 13,
             "canSayIf": [ 12 ],
             "available": true
         },
         {
-            "sentence": "Calmez-vous ce n’est qu’un jouet.", //-5 éthique
+            "sentence": "Calmez-vous ce nï¿½est quï¿½un jouet.",
             "idSentence": 14,
             "canSayIf": [ 12 ],
             "available": true
@@ -48,26 +48,26 @@
             "canSayIf": [ 15 ],
             "available": true
         },
-        { //-10 éthique
+        {
             "sentence": "Faites en un autre au pire",
             "idSentence": 22,
             "canSayIf": [ 21 ],
             "available": true
         },
         {
-            "sentence": "Je suis désolé… Je ne peux même pas imaginer votre douleur.",
+            "sentence": "Je suis dï¿½solï¿½ Je ne peux mï¿½me pas imaginer votre douleur.",
             "idSentence": 23,
             "canSayIf": [ 21 ],
             "available": true
         },
         {
-            "sentence": "Ce n’est pas grave, prenez votre temps, voulez-vous vous asseoir ?",
+            "sentence": "Ce nï¿½est pas grave, prenez votre temps, voulez-vous vous asseoir ?",
             "idSentence": 27,
             "canSayIf": [ 26 ],
             "available": true
         },
         {
-            "sentence": "Vous devriez insister avec votre mari…",
+            "sentence": "Vous devriez insister avec votre mariï¿½",
             "idSentence": 30,
             "canSayIf": [ 29 ],
             "available": true
@@ -79,13 +79,13 @@
             "available": true
         },
         {
-            "sentence": "Y a-t-il une raison à cette passion soudaine ?",
+            "sentence": "Y a-t-il une raison ï¿½ cette passion soudaine ?",
             "idSentence": 35,
             "canSayIf": [ 32 ],
             "available": true
         },
         {
-            "sentence": "Oh excusez-moi, je ne savais pas. S’est-il passé quelque chose ?",
+            "sentence": "Oh excusez-moi, je ne savais pas. Sï¿½est-il passï¿½ quelque chose ?",
             "idSentence": 36,
             "canSayIf": [ 33 ],
             "available": true
@@ -97,19 +97,19 @@
             "available": true
         },
         {
-            "sentence": "Dites m’en plus, ça ne peut pas être que ça.",
+            "sentence": "Dites mï¿½en plus, ï¿½a ne peut pas ï¿½tre que ï¿½a.",
             "idSentence": 42,
             "canSayIf": [ 40 ],
             "available": true
         },
         {
-            "sentence": "Mais comment étiez-vous avant cet incident ?",
+            "sentence": "Mais comment ï¿½tiez-vous avant cet incident ?",
             "idSentence": 43,
             "canSayIf": [ 40 ],
             "available": true
         },
         {
-            "sentence": "Pardon, c’était indiscret,mais vous deviez bien être attachés l’un à l’autre auparavant, non ?",
+            "sentence": "Pardon, cï¿½ï¿½tait indiscret,mais vous deviez bien ï¿½tre attachï¿½s lï¿½un ï¿½ lï¿½autre auparavant, non ?",
             "idSentence": 49,
             "canSayIf": [ 44 ],
             "available": true

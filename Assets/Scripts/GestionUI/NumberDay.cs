@@ -47,6 +47,7 @@ public class NumberDay : MonoBehaviour
             /*On lance l'écran de changement de jour*/
             changePersonnage();
 
+            Debug.Log("jour = " + _day + " et iteration = " + iteration);
             if (iteration < 5)
             {
                 _day = 1;
